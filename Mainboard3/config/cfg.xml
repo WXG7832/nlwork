@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <switcher useVirtualData="true" useAlert="true" useReverseChnIndex="true" procedureMode="DEVICE" useDebug="false" useStepChangeProtect="false"/>  
+  <limit maxDeviceVoltage="5000.0" maxDeviceCurrent="200000.0" minDeviceVoltage="24.0" minDeviceCurrent="30.0" minDefineVoltage="-500.0" maxDefineVoltage="500.0" maxStartupTimeout="10000" maxContinueStartupTimeout="8000" minDischargeVoltage="2000.0" maxCurrPrecideOffset="10.0" maxVoltPrecideOffset="5.0" driverTemperatureAttention="50.0" driverTemperatureAlert="70.0"/>  
+
+  <base customer="ATL" productType="POWERBOX" language="zh_CN" driverChnCount="2" logicDriverCount="1" Cc2CvDescendCount="2" currentPrecide="2.0" voltagePrecide="2.0" disableDefaultProtection="true" useSTM32Time="false"/>  
+
+  <control portName="/dev/ttyS4" use="true" communicateTimeout="0" heartbeat="true"/>  
+  <!-- alarm  : audio and 3 color light  -->  
+  <alarmManager use="false"> 
+    <alarm portName="/dev/ttyS4" use="true" communicateTimeout="2000" alarmType="AUDIO_LIGHT"/> 
+  </alarmManager>  
+  <OMRTemperatureManager use="false" monitor="true"> 
+    <tempBoard portName="/dev/ttyS4" use="true" communicateTimeout="2000" tempBoardType="OMR" monitor="true" index="0"/>  
+    <tempBoard portName="/dev/ttyS4" use="true" communicateTimeout="2000" tempBoardType="OMR_PROTECT" monitor="true" index="1"/> 
+  </OMRTemperatureManager>  
+  <smogAlertManager use="false" monitor="false"> 
+    <smogInfo portName="/dev/ttyS4" use="true" communicateTimeout="2000" index="0" monitor="true"/>  
+    <smogInfo portName="/dev/ttyS4" use="true" communicateTimeout="2000" index="1" monitor="true"/> 
+  </smogAlertManager>  
+  <doorAlertManager use="false" monitor="false"> 
+    <doorInfo portName="/dev/ttyS4" use="true" communicateTimeout="2000" index="0" monitor="true"/>  
+    <doorInfo portName="/dev/ttyS4" use="true" communicateTimeout="2000" index="1" monitor="true"/> 
+  </doorAlertManager>  
+  <screen portName="/dev/ttyS5" use="false" communicateTimeout="2000"/>  
+  <doublePrecision use="true" threshold="200" precision="0.1"/>  
+  <!-- 电源管理器 -->  
+  <!-- use:启用开关；true 启用  false 禁用 -->  
+  <!-- type:电源管理模式  GROUP 分组管理 -->  
+  <!-- group: 分组详情； 以,分割组电源个数 -->  
+  <powerManager use="true" monitor="false" type="GROUP" group="1,1"> 
+    <!-- 电源 -->  
+    <!-- use:启用开关；true 启用  false 禁用 -->  
+    <!-- powerType:电源类型 CHARGE 逆变电源  AUXILIARY 辅助电源  -->  
+    <!-- powerCount:电源个数  -->  
+    <!--  portName 串口地址-->  
+    <!-- monitor:监控 true 启用  false 禁用 ; 禁用后将检测不到电源报警和故障 -->  
+    <powerInfo powerType="CHARGE" powerCount="2" portName="/dev/ttyS4" use="true" monitor="true" communicateTimeout="3000"/>  
+    <powerInfo powerType="AUXILIARY" powerCount="1" portName="/dev/ttyS4" use="true" monitor="true" communicateTimeout="3000"/> 
+  </powerManager>  
+  <!-- 风机管理器 -->  
+  <!-- use:启用开关；true 启用  false 禁用 -->  
+  <!-- monitor:监控 true 启用  false 禁用 ; 禁用后将检测不到风机报警和故障 -->  
+  <fanManager use="false" monitor="true"> 
+    <!-- 风机 -->  
+    <!-- use:启用开关；true 启用  false 禁用 -->  
+    <!-- index:序号 -->  
+    <!-- fanType:风机类型   COOL 散热风机   TURBO 涡轮风机 -->  
+    <!-- fanCount:风机数量 -->  
+    <!--  portName 串口地址-->  
+    <!-- monitor:监控 true 启用  false 禁用 ; 禁用后将检测不到风机报警和故障 -->  
+    <fanInfo index="0" fanType="COOL" fanCount="24" portName="null" use="true" monitor="true" communicateTimeout="1200"/>  
+    <fanInfo index="0" fanType="TURBO" fanCount="24" portName="null" use="true" monitor="true" communicateTimeout="1200"/> 
+  </fanManager>  
+  <mechanismManager use="false" monitor="false"> 
+    <cylinder count="4" portName="/dev/ttyS5" use="false" monitor="false" communicateTimeout="1200"/>  
+    <tempProbe count="8" portName="/dev/ttyS5" use="false" monitor="false" communicateTimeout="1200"/> 
+  </mechanismManager>  
+  <!-- 探头检测管理器 -->  
+  <probeManager use="false" monitor="true"> 
+    <probe count="9" probeType="Temperature" portName="/dev/ttyS4" use="true" monitor="true" communicateTimeout="1200"/>  
+    <probe count="9" probeType="Temperature" portName="/dev/ttyS4" use="true" controlTemp="true" monitor="true" communicateTimeout="1200"/> 
+  </probeManager>  
+  <!-- 设备状态灯管理器(极性灯) -->  
+  <stateLightController use="false"> 
+    <stateLightInfo portName="/dev/ttyS4" index="0" communicateTimeout="2000" use="true"/>  
+    <stateLightInfo portName="/dev/ttyS4" index="1" communicateTimeout="2000" use="true"/> 
+  </stateLightController>  
+  <pingController enable="true" portName="/dev/ttyS5" communicateTimeout="2000"/>
+  
+  <ports> 
+    <port name="/dev/ttyS0" baudrate="38400" use="true"/>  
+    <port name="/dev/ttyS1" baudrate="38400" use="true"/>  
+    <port name="/dev/ttyS2" baudrate="38400" use="true"/>  
+    <port name="/dev/ttyS3" baudrate="38400" use="true"/>  
+    <port name="/dev/ttyS4" baudrate="19200" use="true"/>  
+    <port name="/dev/ttyS5" baudrate="19200" use="true"/> 
+  </ports>  
+  <ip>192.168.1.124</ip>  
+  <protocol voltageResolution="1" currentResolution="1" capacityResolution="2" energyResolution="2" useLogicPowerVoltage="false" useStandaloneProcedure="false" useTempProbe="false" useChnTempPick="true" useAirPressure="false" useStepRecord="false" useFrameTempPick="false" useProcedureWorkType="false" moduleCount="12"> 
+    <!-- maxCount 返回给上位机最大风机状态个数，必须为8的整数倍,默认最大传输32个风机状态 -->  
+    <fan maxFanSupportCount="32" useAnotherFanStateQuery="false"/> 
+  </protocol>  
+  <procedureSupport logic="true" driver="true" supportLeadData="false" supportImportantData="true"/>  
+  <!-- 校准KB系数小数位 -->  
+  <!-- adcK: adc K值小数位 -->  
+  <!-- adcB: adc B值小数位 -->  
+  <!-- programK: 程控 K值小数位 -->  
+  <!-- programB: 程控 B值小数位 -->  
+  <kbDecimal adcK="7" adcB="7" programK="7" programB="7"/>  
+  <!-- 驱动板配置 -->  
+  <!-- index : 驱动板序号，从0表示第1块驱动板以此类推 -->  
+  <!-- portName: 对应的串口名 -->  
+  <!-- use: true表示启用 -->  
+  <!-- useAssist: true表示启用辅助功能，包括温度，辅助电压，功率电压等 -->  
+  <!-- communicateTimeout: 主采集通信超时时间，只适用于采集;单位ms -->  
+  <!-- pickupTime: 主采集通信采集时间间隔，只适用于采集;单位ms -->  
+  <!-- assistPickupTime: 辅助通道采集时间间隔,只适用于与采集，单位ms -->  
+  <!-- assistCommunicateTimeout: 辅助通道采集超时时间,只适用于与采集，单位ms -->  
+  <!-- 逻辑板配置 -->  
+ 
+  
+  <range use="true" disableCurrentLine="20.0" disableVoltageLine="20.0" voltageFilterRange="30.0" voltagePrecision="0.0" voltageStartOffset="0.0" filterVoltage="false" filterCurrent="false" continueAlertFilter="true" microVolt="2500.0" microCurr="50.0" useCvCurrentFilter="true" useSlpVoltFilter="true" useCcVoltageFilter="true" useDcVoltageFilter="true">
+    <section level="0" lower="20.0" upper="200000.0" precision="3.0" filter="true" currentFilterRange="100.0"/>
+  </range>
+  <drivers useTempPick="true">
+    <driver index="0" portName="/dev/ttyS0" use="true" useAssist="false" communicateTimeout="500" pickupTime="500" assistCommunicateTimeout="1000" assistPickupTime="1000" driverboardType="LAB" ip="192.168.1.167"/>
+    <driver index="1" portName="/dev/ttyS0" use="true" useAssist="false" communicateTimeout="500" pickupTime="500" assistCommunicateTimeout="1000" assistPickupTime="1000"/>
+    <driver index="2" portName="/dev/ttyS0" use="true" useAssist="false" communicateTimeout="500" pickupTime="500" assistCommunicateTimeout="1000" assistPickupTime="1000"/>
+    <driver index="3" portName="/dev/ttyS3" use="true" useAssist="false" communicateTimeout="500" pickupTime="500" assistCommunicateTimeout="1000" assistPickupTime="1000"/>
+    <driver index="4" portName="/dev/ttyS3" use="true" useAssist="false" communicateTimeout="500" pickupTime="500" assistCommunicateTimeout="1000" assistPickupTime="1000"/>
+    <driver index="5" portName="/dev/ttyS2" use="true" useAssist="false" communicateTimeout="500" pickupTime="500" assistCommunicateTimeout="1000" assistPickupTime="1000"/>
+    <driver index="6" portName="/dev/ttyS2" use="true" useAssist="false" communicateTimeout="500" pickupTime="500" assistCommunicateTimeout="1000" assistPickupTime="1000"/>
+    <driver index="7" portName="/dev/ttyS2" use="true" useAssist="false" communicateTimeout="500" pickupTime="500" assistCommunicateTimeout="1000" assistPickupTime="1000"/>
+  </drivers>
+</root>

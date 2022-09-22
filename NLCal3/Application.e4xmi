@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="NLCal.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="NLCal.window.main" label="纽联校准测试系统(生产)v3.0.06.20220307" iconURI="platform:/plugin/NLCal/icons/logo.png" width="1024" height="768">
+    <tags>shellMaximized</tags>
+    <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="NLCal.partsashcontainer.sample">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_gInrkHnYEemyC4uzXr1kbA" elementId="nlcal.partsashcontainer.split" horizontal="true">
+        <children xsi:type="basic:PartStack" xmi:id="_yFBmwHnYEemyC4uzXr1kbA" elementId="nlcal.partstack.tree" containerData="120">
+          <children xsi:type="basic:Part" xmi:id="_1ByS0HnYEemyC4uzXr1kbA" elementId="nlcal.part.devicelist" contributionURI="bundleclass://NLCal/com.nlteck.parts.DeviceListPart" label="设备树"/>
+        </children>
+        <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="NLCal.partstack.workbench" containerData="880">
+          <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="nlcal.part.calibrateConsole" contributionURI="bundleclass://NLCal/com.nlteck.parts.CalibrateConsolePart" label="校准工作台"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_sVSawHd9EemjwuLEe2MnyA" elementId="nlcal.menu.config" label="配置">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_YDFuMKzQEeyAz9dRXlepnA" elementId="nlcal3.handledmenuitem.stable" label="稳定度方案" iconURI="platform:/plugin/NLCal/icons/procedure.png" tooltip="可以配置稳定度测试方案" mnemonics="S" command="_Clx4EKzQEeyAz9dRXlepnA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_oKjT0CTbEe2Z85T2AHL61g" elementId="nlcal3.handledmenuitem." label="基础配置" tooltip="兼容性配置" command="_JaYOYCTfEe2Z85T2AHL61g"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_gBpwUE15Eeu6UsHf3-h3zw" elementId="nlcal.menu.data" label="数据">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_lOAgcE15Eeu6UsHf3-h3zw" elementId="nlcal.handledmenuitem.dataManage" label="数据管理" command="_AjxXsE16Eeu6UsHf3-h3zw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_2ZOPQE15Eeu6UsHf3-h3zw" elementId="nlcal.handledmenuitem.deviceLog" label="整柜日志" command="_EL3fwE16Eeu6UsHf3-h3zw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_VRzMAEA_Eeutm_z8Nvz3vg" elementId="nlcal.trimbar.top">
+      <children xsi:type="menu:ToolBar" xmi:id="_dVVkoEA_Eeutm_z8Nvz3vg" elementId="nlcal.toolbar.basicToolBar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_p8FCsEA_Eeutm_z8Nvz3vg" elementId="nlcal.handledtoolitem.searchDevice" label="" iconURI="platform:/plugin/NLCal/icons/toolitem/serch_device_16.png" tooltip="搜索在线设备" command="_g3BGMEBAEeutm_z8Nvz3vg"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_lVbi4CDeEeucb-yt_pwutg" elementId="nlcal.handler.calibrate" contributionURI="bundleclass://NLCal/com.nlteck.handlers.CalibrateHandler" command="_aEP0cCDcEeucb-yt_pwutg"/>
+  <handlers xmi:id="_hwnPcCIqEeup2oNIWU1b7Q" elementId="nlcal.handler.calculate" contributionURI="bundleclass://NLCal/com.nlteck.handlers.CalculateHandler" command="_cTX-cCDcEeucb-yt_pwutg"/>
+  <handlers xmi:id="_rbTnoCPhEeuADt43b5VKHw" elementId="nlcal.handler.precision" contributionURI="bundleclass://NLCal/com.nlteck.handlers.PrecisionConfigHandler" command="_mwgFYCPhEeuADt43b5VKHw"/>
+  <handlers xmi:id="_-VqnIDL7EeuTLOdJzQuj9g" elementId="nlcal.handler.debugMode" contributionURI="bundleclass://NLCal/com.nlteck.handlers.DebugModeHandler" command="_33rQADL7EeuTLOdJzQuj9g"/>
+  <handlers xmi:id="_mHYzoEBAEeutm_z8Nvz3vg" elementId="nlcal.handler.searchDevice" contributionURI="bundleclass://NLCal/com.nlteck.handlers.SearchDeviceHandller" command="_g3BGMEBAEeutm_z8Nvz3vg"/>
+  <handlers xmi:id="_AAwUwE17Eeu6UsHf3-h3zw" elementId="nlcal.handler.dataManage" contributionURI="bundleclass://NLCal/com.nlteck.handlers.DataManagedHandler" command="_AjxXsE16Eeu6UsHf3-h3zw"/>
+  <handlers xmi:id="_Ipo2IE17Eeu6UsHf3-h3zw" elementId="nlcal.handler.deviceLog" contributionURI="bundleclass://NLCal/com.nlteck.handlers.DeviceLogHandler" command="_EL3fwE16Eeu6UsHf3-h3zw"/>
+  <handlers xmi:id="_KSco0KzQEeyAz9dRXlepnA" elementId="nlcal3.handler.stableplan" contributionURI="bundleclass://NLCal/com.nlteck.handlers.StablePlanHandler" command="_Clx4EKzQEeyAz9dRXlepnA"/>
+  <handlers xmi:id="_Po4YACTfEe2Z85T2AHL61g" elementId="nlcal.partdescriptor.baseConfig" contributionURI="bundleclass://NLCal/com.nlteck.handlers.baseCfgHandler" command="_JaYOYCTfEe2Z85T2AHL61g"/>
+  <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="NLCal.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
+    <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="NLCal.keybinding.m1q" keySequence="M1+Q"/>
+    <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="NLCal.keybinding.m1o" keySequence="M1+O"/>
+    <bindings xmi:id="_6wlLhcgZEeSyMNYR5xypkQ" elementId="NLCal.keybinding.m1s" keySequence="M1+S"/>
+    <bindings xmi:id="_6wlLiMgZEeSyMNYR5xypkQ" elementId="NLCal.keybinding.m1a" keySequence="M1+A"/>
+  </bindingTables>
+  <rootContext xmi:id="_6wlLecgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_6wlLe8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <descriptors xmi:id="_-U-mgH07Eem-xbxNWJPfwQ" elementId="nlcal.partdescriptor.chnshow" label="通道详情" iconURI="platform:/plugin/NLCal/icons/battery-init16.png" closeable="true" contributionURI="bundleclass://NLCal/com.nlteck.parts.ChannelInfoPart"/>
+  <descriptors xmi:id="_HMYG8H3qEemzpqIZ8sF2ZA" elementId="nlcal.partdescriptor.driver" label="驱动板详情" iconURI="platform:/plugin/NLCal/icons/driver16.png" closeable="true" contributionURI="bundleclass://NLCal/com.nlteck.parts.DriverInfoPart"/>
+  <descriptors xmi:id="_2PFeQIHtEem8QJL0-zyOhQ" elementId="nlcal.partdescriptor.procedure" label="流程" iconURI="platform:/plugin/NLCal/icons/procedure.png" closeable="true" contributionURI="bundleclass://NLCal/com.nlteck.parts.ProcedurePart"/>
+  <descriptors xmi:id="_Qv2AoCIrEeup2oNIWU1b7Q" elementId="nlcal.partdescriptor.calibrateConfig" label="校准方案" contributionURI="bundleclass://NLCal/com.nlteck.parts.CalibrateConfigPart"/>
+  <descriptors xmi:id="_YtQjICIrEeup2oNIWU1b7Q" elementId="nlcal.partdescriptor.calculateConfig" label="计量方案" contributionURI="bundleclass://NLCal/com.nlteck.parts.CalculateConfigPart"/>
+  <descriptors xmi:id="_0yLUcCpEEeuMQazwNI-gLA" elementId="nlcal.partdescriptor.driverConsolePart" label="单板调试" contributionURI="bundleclass://NLCal/com.nlteck.parts.DriverConsolePart"/>
+  <descriptors xmi:id="_KgtAgC0xEeu_W9mFlewxOQ" elementId="nlcal.partdescriptor.logicConsole" label="逻辑板调试" contributionURI="bundleclass://NLCal/com.nlteck.parts.LogicConsolePart"/>
+  <descriptors xmi:id="_1wQ2UC7DEeuOb57j5M6D6A" elementId="nlcal.partdescriptor.channelConsolePart" label="通道面板" contributionURI="bundleclass://NLCal/com.nlteck.parts.ChannelConsolePart"/>
+  <descriptors xmi:id="_bKVFUDL8EeuTLOdJzQuj9g" elementId="nlcal.partdescriptor.debugModePart" label="调试模式" contributionURI="bundleclass://NLCal/com.nlteck.parts.DebugModePart"/>
+  <descriptors xmi:id="_abx5UKzPEeyAz9dRXlepnA" elementId="nlcal3.partdescriptor.stableplan" label="稳定度测试方案" iconURI="platform:/plugin/NLCal/icons/procedure.png" contributionURI="bundleclass://NLCal/com.nlteck.parts.StablePlanPart"/>
+  <descriptors xmi:id="_6bm-cCTdEe2Z85T2AHL61g" elementId="nlcal.partdescriptor.baseConfig" label="兼容配置" closeable="true" contributionURI="bundleclass://NLCal/com.nlteck.parts.BaseConfigPart"/>
+  <commands xmi:id="_aEP0cCDcEeucb-yt_pwutg" elementId="nlcal.command.calibrate" commandName="校准配置"/>
+  <commands xmi:id="_cTX-cCDcEeucb-yt_pwutg" elementId="nlcal.command.calculate" commandName="计量配置"/>
+  <commands xmi:id="_mwgFYCPhEeuADt43b5VKHw" elementId="nlcal.command.pricision" commandName="精度档位"/>
+  <commands xmi:id="_33rQADL7EeuTLOdJzQuj9g" elementId="nlcal.command.debugMode" commandName="调试模式"/>
+  <commands xmi:id="_g3BGMEBAEeutm_z8Nvz3vg" elementId="nlcal.command.searchDevice" commandName="搜索设备"/>
+  <commands xmi:id="_AjxXsE16Eeu6UsHf3-h3zw" elementId="nlcal.command.dataManage" commandName="数据管理"/>
+  <commands xmi:id="_EL3fwE16Eeu6UsHf3-h3zw" elementId="nlcal.command.deviceLog" commandName="整柜日志"/>
+  <commands xmi:id="_Clx4EKzQEeyAz9dRXlepnA" elementId="nlcal3.command.stableplan" commandName="稳定度测试"/>
+  <commands xmi:id="_JaYOYCTfEe2Z85T2AHL61g" elementId="nlcal.partdescriptor.baseConfig" commandName="兼容配置"/>
+  <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_6wlLdcgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_6wlLdsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_6wlLd8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_6wlLeMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

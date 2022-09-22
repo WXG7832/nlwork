@@ -1,0 +1,150 @@
+2021-07-06 11:25:13.166  INFO -load ag protection:150.0
+2021-07-06 11:25:13.167  INFO -load ic protection:150.0
+2021-07-06 11:25:13.167  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-06 11:25:13.168  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=150.0]
+2021-07-07 13:55:43.392  INFO -load ag protection:150.0
+2021-07-07 13:55:43.397  INFO -load ic protection:150.0
+2021-07-07 13:55:43.398  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-07 13:55:43.398  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=150.0]
+2021-07-07 14:35:18.267  INFO -load ag protection:150.0
+2021-07-07 14:35:18.270  INFO -load ic protection:150.0
+2021-07-07 14:35:18.270  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-07 14:35:18.272  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=240.0]
+2021-07-07 14:36:24.682  INFO -load ag protection:150.0
+2021-07-07 14:36:24.686  INFO -load ic protection:150.0
+2021-07-07 14:36:24.687  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-07 14:36:24.688  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=240.0]
+2021-07-07 14:37:37.171  INFO -load ag protection:150.0
+2021-07-07 14:37:37.175  INFO -load ic protection:150.0
+2021-07-07 14:37:37.176  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-07 14:37:37.177  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=240.0]
+2021-07-07 14:40:41.467  INFO -load ag protection:150.0
+2021-07-07 14:40:41.470  INFO -load ic protection:150.0
+2021-07-07 14:40:41.470  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-07 14:40:41.471  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=166.0]
+2021-07-07 16:34:35.305  INFO -load ag protection:150.0
+2021-07-07 16:34:35.307  INFO -load ic protection:150.0
+2021-07-07 16:34:35.308  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-07 16:34:35.309  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-07 18:30:20.837  INFO -load ag protection:150.0
+2021-07-07 18:30:20.839  INFO -load ic protection:150.0
+2021-07-07 18:30:20.840  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-07 18:30:20.841  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 11:05:29.308  INFO -load ag protection:150.0
+2021-07-08 11:05:29.327  INFO -load ic protection:150.0
+2021-07-08 11:05:29.329  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 11:05:29.330  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 11:09:11.360  INFO -load ag protection:150.0
+2021-07-08 11:09:11.362  INFO -load ic protection:150.0
+2021-07-08 11:09:11.363  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 11:09:11.364  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 11:24:19.396  INFO -load ag protection:150.0
+2021-07-08 11:24:19.397  INFO -load ic protection:150.0
+2021-07-08 11:24:19.399  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 11:24:19.400  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 11:36:03.583  INFO -load ag protection:150.0
+2021-07-08 11:36:03.584  INFO -load ic protection:150.0
+2021-07-08 11:36:03.586  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 11:36:03.587  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 14:13:27.017  INFO -load ag protection:150.0
+2021-07-08 14:13:27.019  INFO -load ic protection:150.0
+2021-07-08 14:13:27.020  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 14:13:27.021  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 14:20:27.743  INFO -load ag protection:150.0
+2021-07-08 14:20:27.744  INFO -load ic protection:150.0
+2021-07-08 14:20:27.745  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 14:20:27.746  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 14:21:36.939  INFO -load ag protection:150.0
+2021-07-08 14:21:36.941  INFO -load ic protection:150.0
+2021-07-08 14:21:36.942  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 14:21:36.943  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 14:24:33.316  INFO -load ag protection:150.0
+2021-07-08 14:24:33.317  INFO -load ic protection:150.0
+2021-07-08 14:24:33.318  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 14:24:33.320  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 15:48:09.910  INFO -load ag protection:150.0
+2021-07-08 15:48:09.912  INFO -load ic protection:150.0
+2021-07-08 15:48:09.913  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 15:48:09.915  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 15:48:18.168  INFO -load ag protection:150.0
+2021-07-08 15:48:18.170  INFO -load ic protection:150.0
+2021-07-08 15:48:18.171  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 15:48:18.172  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 16:30:47.417  INFO -load ag protection:150.0
+2021-07-08 16:30:47.418  INFO -load ic protection:150.0
+2021-07-08 16:30:47.420  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 16:30:47.421  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 16:34:06.429  INFO -load ag protection:150.0
+2021-07-08 16:34:06.432  INFO -load ic protection:150.0
+2021-07-08 16:34:06.433  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 16:34:06.434  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 16:40:51.948  INFO -load ag protection:150.0
+2021-07-08 16:40:51.950  INFO -load ic protection:150.0
+2021-07-08 16:40:51.951  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 16:40:51.953  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 16:44:34.966  INFO -load ag protection:150.0
+2021-07-08 16:44:34.968  INFO -load ic protection:150.0
+2021-07-08 16:44:34.969  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 16:44:34.970  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 16:45:03.919  INFO -load ag protection:150.0
+2021-07-08 16:45:03.927  INFO -load ic protection:150.0
+2021-07-08 16:45:03.928  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 16:45:03.930  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 16:51:24.656  INFO -load ag protection:150.0
+2021-07-08 16:51:24.660  INFO -load ic protection:150.0
+2021-07-08 16:51:24.661  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 16:51:24.662  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 16:53:25.850  INFO -load ag protection:150.0
+2021-07-08 16:53:25.853  INFO -load ic protection:150.0
+2021-07-08 16:53:25.855  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 16:53:25.856  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 16:59:15.115  INFO -load ag protection:150.0
+2021-07-08 16:59:15.117  INFO -load ic protection:150.0
+2021-07-08 16:59:15.118  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 16:59:15.119  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-08 17:03:00.720  INFO -load ag protection:150.0
+2021-07-08 17:03:00.725  INFO -load ic protection:150.0
+2021-07-08 17:03:00.726  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-08 17:03:00.727  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-09 14:04:36.674  INFO -load ag protection:150.0
+2021-07-09 14:04:36.695  INFO -load ic protection:150.0
+2021-07-09 14:04:36.696  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=3999.0, capacityCoefficien=2.5]
+2021-07-09 14:04:36.702  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=186.0]
+2021-07-26 09:41:17.271  INFO -load ag protection:
+2021-07-26 09:41:17.277  INFO -load ag retest protection:
+2021-07-26 09:41:17.277  INFO -load ic protection:
+2021-07-26 09:41:17.278  INFO -load ic retest protection:
+2021-07-26 09:41:17.278  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-26 09:41:17.278  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=150.0]
+2021-07-26 11:31:10.772  INFO -load ag protection:
+2021-07-26 11:31:10.773  INFO -load ag retest protection:
+2021-07-26 11:31:10.773  INFO -load ic protection:
+2021-07-26 11:31:10.773  INFO -load ic retest protection:
+2021-07-26 11:31:10.773  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-26 11:31:10.774  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=150.0]
+2021-07-26 13:31:55.045  INFO -load ag protection:protectAG
+2021-07-26 13:31:55.045  INFO -load ag retest protection:
+2021-07-26 13:31:55.045  INFO -load ic protection:
+2021-07-26 13:31:55.046  INFO -load ic retest protection:
+2021-07-26 13:31:55.046  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-26 13:31:55.046  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=150.0]
+2021-07-26 14:37:04.097  INFO -load ag protection:protectAG
+2021-07-26 14:37:04.097  INFO -load ag retest protection:
+2021-07-26 14:37:04.098  INFO -load ic protection:
+2021-07-26 14:37:04.098  INFO -load ic retest protection:
+2021-07-26 14:37:04.098  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=500.0, capacityCoefficien=2.5]
+2021-07-26 14:37:04.098  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=150.0]
+2021-12-24 15:24:13.175  INFO -load ag protection:protectAG
+2021-12-24 15:24:13.188  INFO -load ag retest protection:
+2021-12-24 15:24:13.188  INFO -load ic protection:
+2021-12-24 15:24:13.188  INFO -load ic retest protection:
+2021-12-24 15:24:13.189  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=4200.0, capacityCoefficien=2.5]
+2021-12-24 15:24:13.189  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=150.0]
+2021-12-24 15:24:13.189  INFO -write base protections:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=4200.0, capacityCoefficien=2.5],PoleData [pole=NORMAL, poleDefine=150.0]
+2021-12-24 15:37:45.330  INFO -load ag protection:protectAG
+2021-12-24 15:37:45.330  INFO -load ag retest protection:
+2021-12-24 15:37:45.330  INFO -load ic protection:
+2021-12-24 15:37:45.330  INFO -load ic retest protection:
+2021-12-24 15:37:45.333  INFO -load device protect:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=4200.0, capacityCoefficien=2.5]
+2021-12-24 15:37:45.334  INFO -load pole protect:PoleData [pole=NORMAL, poleDefine=150.0]
+2021-12-24 15:37:45.355  INFO -write base protections:DeviceProtectData [batVoltUpper=4800.0, deviceVoltUpper=5000.0, currUpper=4200.0, capacityCoefficien=2.5],PoleData [pole=NORMAL, poleDefine=150.0]

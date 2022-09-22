@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nlteck.model.mapper.PlanDotMapper">
+
+ <sql id="planDotSection">
+     pd.id            as   pd_id ,
+     pd.calculateDot  as   pd_calculatedot,
+     pd.calMode       as   pd_calmode,
+     pd.calPole       as   pd_calpole,
+     pd.calResolution as   pd_calresolution
+ </sql>
+ 
+ <select id="select" parameterType="map" resultType="PlanDot">
+    select * from plandot_table 
+    <where>
+      <if test="id != null">and id = #{id}</if>
+      <if test="procedureId != null">and procedure_id = #{procedure.id}</if>
+    </where>
+ </select>
+ 
+ <insert id="insert" parameterType="PlanDot" keyProperty="id" useGeneratedKeys="true">
+     insert into plandot_table(calculateDot,calMode,calPole,calResolution,procedure_id) 
+      values(#{calculateDot},#{calMode},#{calPole},#{calResolution},#{procedure.id})
+ </insert>
+ 
+ <delete id="delete" parameterType="map">
+     delete from plandot_table
+     <where>
+        <if test="id != null">and id = #{id}</if>
+        <if test="procedureId != null">and procedure_id = #{procedureId}</if>
+     </where>
+ </delete>
+ 
+ <update id="update">
+    update plandot_table 
+    <set>
+       <if test="calculateDot != null">,calculateDot = #{calculateDot}</if>
+       <if test="calMode != null">,calMode = #{calMode}</if>
+       <if test="calPole != null">,calPole = #{calPole}</if>
+       <if test="calResolution != null">,calResolution = #{calResolution}</if>
+    </set>
+    where id = #{id}
+ </update>
+
+
+</mapper>

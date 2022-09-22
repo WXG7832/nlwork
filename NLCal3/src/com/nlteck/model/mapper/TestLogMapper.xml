@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nlteck.model.mapper.TestLogMapper">
+
+	<select id="select" resultType="TestLog" parameterType="map">
+		select * from testlog_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="testId != null">and test_id = #{testId}</if>
+		</where>
+	</select>
+
+	<insert id="insert" parameterType="TestLog" keyProperty="id"
+		useGeneratedKeys="true">
+		insert into testlog_table
+		(
+		id,
+		test_id,
+		level,
+		content,
+		date
+		)
+		values
+		(
+		#{id},
+		#{testId},
+		#{level},
+		#{content},
+		#{date}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="map">
+		delete from testlog_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="testId != null">and test_id = #{testId}</if>
+		</where>
+	</delete>
+
+</mapper>

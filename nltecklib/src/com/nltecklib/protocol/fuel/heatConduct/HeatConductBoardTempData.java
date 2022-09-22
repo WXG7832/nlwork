@@ -1,0 +1,51 @@
+package com.nltecklib.protocol.fuel.heatConduct;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.nltecklib.protocol.Configable;
+import com.nltecklib.protocol.Queryable;
+import com.nltecklib.protocol.Responsable;
+import com.nltecklib.protocol.fuel.ComponentSupportable;
+import com.nltecklib.protocol.fuel.Data;
+import com.nltecklib.protocol.fuel.Environment.Code;
+import com.nltecklib.protocol.util.ProtocolUtil;
+
+/**
+ * 导热罐控制板温度采集配置协议
+ * 
+ * @author caichao_tang
+ *
+ */
+public class HeatConductBoardTempData extends Data implements ComponentSupportable, Queryable, Responsable, Configable {
+    /**
+     * 温度值
+     */
+    private double temperature;
+
+    public double getTemperature() {
+	return temperature;
+    }
+
+    public void setTemperature(double temperature) {
+	this.temperature = temperature;
+    }
+
+    @Override
+    public void encode() {
+	data.addAll(Arrays.asList(ProtocolUtil.split((int) (temperature * 10), 2, true)));
+    }
+
+    @Override
+    public void decode(List<Byte> encodeData) {
+	data = encodeData;
+	int index = 0;
+	temperature = ProtocolUtil.compose(data.subList(index, index + 2).toArray(new Byte[0]), true) / 10.0;
+    }
+
+    @Override
+    public Code getCode() {
+	return HeatConductBoardFunctionCode.TEMP;
+    }
+
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.nlteck.model.mapper.ChannelMapper">	
+
+    <sql id="channelSection">
+          channel.id        as    channel_id ,
+          channel.channelIndexInDriver  as    channel_indexindriver,
+          channel.testState             as    channel_teststate,
+          channel.testDate              as    channel_testdate,
+          channel.testSeconds           as    channel_testseconds
+          
+    </sql>
+    
+	<select id="select" resultType="Channel" parameterType="map">
+        select * from channel_table 
+        <where>
+         <if test="id != null">and id = #{id}</if>
+         <if test="driver_id != null">and driver_id #{driver.id}</if>
+         <if test="channelIndexInDriver != null">and channelIndexInDriver = #{channelIndexInDriver}</if>
+         <if test="testDate != null">and testDate >= #{testDate.id}</if>
+      </where> 
+    </select>
+	
+	<insert id="insert" parameterType="Channel" keyProperty="id" useGeneratedKeys="true">
+		  insert into channel_table(id,channelIndexInDriver,testDate,testSeconds,testState,driver_id)values(#{id},#{channelIndexInDriver},#{testDate},#{testSeconds},#{testState},#{driver.id})
+	</insert>
+	 <delete id="delete" parameterType="map">
+       delete from channel_table 
+       <where>
+         <if test="id != null">and id = #{id}</if>
+       </where>
+    </delete>
+	
+	<update id="update" parameterType="Channel">
+       update channel_table 
+       <set>
+          <if test="channelIndexInDriver != null">,channelIndexInDriver=#{channelIndexInDriver}</if>
+          <if test="testSeconds != null">,testSeconds=#{testSeconds}</if>
+          <if test="testState != null">,testState=#{testState}</if>
+          <if test="testDate != null">,testDate=#{testDate}</if>
+       </set>
+       where id = #{id}
+    </update>
+     <resultMap type="Channel" id="channelResult">
+       <id property="id" column="channel_id"/>
+          <result property="channelIndexInDriver" column="channel_indexindriver"/>
+          <result property="testState" column="channel_teststate"/>
+          <result property="testDate"  column="channel_testdate"/>
+          <result property="testSeconds" column="channel_testseconds"/>
+         <!--  <collection property="meterDots" ofType="DataDot" resultMap="com.nlteck.model.mapper.DataDotMapper.dataDotResult"/>-->
+      </resultMap>
+</mapper>

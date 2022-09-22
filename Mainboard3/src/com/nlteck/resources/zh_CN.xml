@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+	<item key="MainStateDataParsingError" value="解析主控状态数据错误!" />
+	<item key="MainStateGetError_IO" value="获取主控状态失败:执行IO命令错误" />
+	<item key="MainStateGetError_CmdInterrupt" value="获取主控状态失败:执行命令被中断" />
+	<item key="RunningLampInitError" value="初始化运行灯发生错误" />
+	<item key="DeviceMalfunctionProtect" value="设备故障保护" />>
+	<item key="ChnStartError_UdtAbnormal" value="该通道状态异常UDT无法正常启动" />
+	<item key="StepInto" value="转入步次" />
+	<item key="ChannelBufferedTooMuchDataAndPaused" value="因通道缓存数据过多而暂停" />
+	<item key="LogicBoardCommunicationTimeout" value="逻辑板(%d)通信超时" />
+	<item key="WaitingStateDueToSynchronousMode" value="因同步模式进行等待状态" />
+	<item key="ProcessCompleted" value="流程完毕!" />
+	<item key="ProcessStart" value="开始流程测试" />
+	<item key="UserStopChn" value="用户停止了通道" />
+	<item key="UserPauseChn" value="用户暂停了通道" />
+	<item key="UserRecoveryChn" value="用户恢复了通道" />
+	<item key="RecoverStepFail_MaybeCommunicationAbnormal" value="可能因通信异常导致恢复步次失败!" />
+	<item key="JumpStepFail_MaybeCommunicationAbnormal" value="可能因通信异常导致跳转步次失败!" />
+	<item key="JumpStepFail_VoltNotHighEnough" value="因电压未充到%smV,%d-%d跳转步次失败" />
+	<item key="JumpStepFail_CurrNotLowEnough" value="因电流未降到%smA截止电流,%d-%d跳转步次失败" />
+	<item key="JumpStepFail_VoltNotLowEnough" value="因电压未放到%smV,%d-%d跳转步次失败" />
+	<item key="SleepRecoveryAlarm" value="休眠恢复报警" />
+	<item key="SleepStartAlarm" value="休眠启动报警" />
+	<item key="SleepStartAlarm_ChnStartWithCurr" value="休眠启动报警[通道启动有电流]" />
+	<item key="RecoveryAlarm_ChnRecoveryTimeout" value="恢复报警[通道恢复超时]" />
+	<item key="RecoveryAlarm_ChnRecoveryStartNoCurr" value="恢复报警[通道恢复启动无电流]" />
+	<item key="StartAlarm_ChnStartTimeout" value="启动报警[通道启动超时]" />
+	<item key="StartAlarm_ChnStartNoCurr" value="启动报警[通道启动无电流]" />
+	<item key="ContinuousStartAlarm_ChnStartCurrError" value="连续启动报警[通道启动电流错误]" />
+	<item key="DeviceVoltUpper_MainDetectedLogicVolt" value="设备电压超限[主控检测到逻辑电压:%smV%s]" />
+	<item key="VoltHighThanSetValue" value="超过设定值%f,mV" />
+	<item key="CurrHighThanSetValue" value="超过设定值%f,mA" />
+	<item key="DeviceVoltUpper_MeasureVolt" value="设备电压超限[回检电压:%smV%s]" />
+	<item key="ChnMeasureMalfunction" value="通道回检故障" />
+	<item key="BatteryVoltUpper_MainDetectedLogicVolt" value="电芯电压超限[主控检测电压:%smV%s]" />
+	<item key="BatteryCurrUpper_MainDetectedLogicCurr" value="电芯电流超限[主控检测电流:%smA%s]" />
+	<item key="LogicBoardDetectedAbnormal_Instant" value="逻辑板检测到异常[瞬时电压%smV,瞬时电流%smA]" />
+	<item key="BatteryVoltUpper_LogicBoardDetectedVolt" value="电芯电压超限[逻辑板检测电压:%smV%s]" />
+	<item key="ChnCurrUpper_LogicBoardDetectedCurr" value="通道电流超限[逻辑板检测电流:%smA%s]" />
+	<item key="PoleReverse_DetectedChnPoleReverse" value="极性反接[检测到通道极性反接]" />
+	<item key="CapatityUpper_StepCapatityUpper" value="容量超限[步次容量:%smAh,,超过流程预设容量(%d * %f)]" />
+	<item key="StartUnitNoProcess" value="启动分区%d无流程" />
+	<item key="StartUnitProcessSize" value="启动分区%d流程%d步次" />
+	<item key="LogicBoardCommunicateInterrupted_PleaseCheck" value="逻辑板%d已通信中断,请检查!" />
+	<item key="CheckBoardCommunicateInterrupted_PleaseCheck" value="回检板%d已通信中断,请检查!" />
+	<item key="Device" value="设备" />
+	<item key="UnitWithIndex" value="分区%d" />
+	<item key="StartTimeout" value="启动超时" />
+	<item key="ChnPickupCommunicationTimeout" value="通道采集数据通信超时!" />
+	<item key="DriverBoardTempUpper" value="驱动板%d温度(%s℃)超安全限值%f℃" />
+	<item key="DriverBoardTempRecoverNormal" value="驱动板%d温度(%s℃)已恢复正常" />
+	<item key="GpioInitError" value="初始化电源控制器发生错误!" />
+	<item key="EnterCalMode" value="进入校准模式" />
+	<item key="EnterCalModeFail" value="进入校准模式失败:%s" />
+	<item key="LogicBoardCommunicateInterrupted" value="逻辑板%d通信中断" />
+	<item key="LogicBoardCommunicateNormal" value="逻辑板%d通信正常" />
+	<item key="OfflineRuntimeUpper" value="离线运行超过设定时间%dmin,退出离线运行" />
+	<item key="DeviceDropped" value="设备掉线" />
+	<item key="CloseChnByChnProtect" value="因通道保护,关闭通道" />
+	<item key="JumpStep" value="跳步次,%d-%d,mode:%s" />
+	<item key="CloseChnByProcessComplete" value="因通道流程结束,关闭通道" />
+	<item key="StepIntoBySetedTime" value="因设定时间转入步次,%d-%d,mode:%s" />
+	<item key="StepNextBySetedTime" value="因设定时间转下步次,%d-%d,mode:%s" />
+	<item key="StepNextByDeltaVolt" value="因△v转下步次,%d-%d,mode:%s" />
+	<item key="StepNextByCapacity" value="因容量转下步次,%d-%d,mode:%s" />
+	<item key="StepNextByCutOffCondition" value="因截止条件转下步次,%d-%d,mode:%s" />
+	<item key="ChnSleepWithCurr" value="通道休眠仍有电流%smA" />
+	<item key="CcCloseChnAbnormalByCutOffVolt" value="cc未正常通过截止电压关闭通道" />
+	<item key="CvCloseChnAbnormalByCutOffCurr" value="cv未正常通过截止电流关闭通道" />
+	<item key="DcCloseChnAbnormalByCutOffVolt" value="dc未正常通过截止电压关闭通道" />
+	<item key="CloseLogicBoardChnCauseLogicError" value="关闭逻辑板%d通道发生逻辑错误" />
+	<item key="CloseLogicBoardChnCauseError" value="关闭逻辑板%d通道发生错误" />
+	<item key="OpenLogicBoardChnCauseLogicError" value="打开逻辑板%d通道发生逻辑错误" />
+	<item key="LogicBoardProtectSetError" value="设置逻辑板%d设备保护返回错误" />
+	<item key="LogicBoardPoleSetError" value="配置逻辑板%d极性发生通信错误" />
+	<item key="LogicBoardChnStateInitError" value="初始化逻辑板%d通道状态发生逻辑错误" />
+	<item key="LogicBoardIsCalMode_PleaseExit" value="逻辑板%d处于校准模式,请先退出校准模式" />
+	<item key="LogicBoardExitCalModeFail" value="退出逻辑板%d校准模式失败" />
+	<item key="LogicBoardSetFail" value="配置逻辑板%d失败" />
+	<item key="CalBoardBaseVoltSetFail" value="设置校准板基准电压发生错误" />
+	<item key="CalBoardBaseVoltMatchExitFail" value="退出校准板基准电压匹配模式发生错误" />
+	<item key="CalLogicBoardCauseLogicError" value="校准逻辑板%d发生逻辑错误" />
+	<item key="DateTimeAdjustFail" value="校准时间失败:%s" />
+	<item key="DateTimeAdjustCauseError" value="校准时间发生错误:%s" />
+	<item key="IpAddressSetFail" value="修改IP地址失败" />
+	<item key="ChnVoltSetUpper" value="配置通道电压上限:%fmV,不能超过最大设置值%fmV" />
+	<item key="DeviceVoltSetUpper" value="配置设备电压上限:%fmV,不能超过最大设置值%fmV" />
+	<item key="ChnCurrSetUpper" value="配置设备电流上限:%fmA,不能超过最大设置值%fmA" />
+	<item key="PoleVoltDefineError" value="配置极性界定值:%fmV,必须在范围(%f-%f)之间" />
+	<item key="FirstStepCCVoltLower" value="首步次CC电压下限:%fmV不能大于电压上限%fmV" />
+	<item key="FirstStepCCVoltUpper" value="首步次CC电压不能超过最大电压设置上限%fmV" />
+	<item key="DeviceExitOfflineMode" value="设备已退出离线运行模式" />
+	<item key="NoProcess_QueryError" value="没有配置流程,查询错误!" />
+	<item key="OperationError" value="操作出现异常错误:%s" />
+	<item key="LogicChnSelfStop" value="逻辑错误[逻辑板通道发生异常关闭,状态:%s]" />
+	
+	<item key="DriverRest" value="发现逻辑板%d与驱动板通信失联，开始复位" />
+	
+	<item key="ChnNotAllInUnit" value="操作的通道没有全部在同一分区" />
+	<item key="StepSkipError" value="步次跳转异常，步次%d->%d,循环%d->%d"/>
+	<item key="StepSkipErrorNull" value="当前步次无法跳转到下一步:步次%d,循环%d"/>
+	
+	<item key="WriteLogicStartupInitResponseFail" value="写入逻辑板启动初始化状态失败，结果码:%s" />
+	<item key="WriteLogicProcedureResponseFail" value="写入逻辑板流程失败，结果码:%s" />
+	<item key="WriteLogicBatExistResponseFail" value="写入逻辑板电芯判断状态失败，结果码:%s" />
+	<item key="WriteLogicStateModeResponseFail" value="写入逻辑板工作模式失败，结果码:%s" />
+	
+	<item key="OpenSerialFail"  value="打开串口%s失败"/>
+	<item key="OpenFansFail"  value="启动风机失败"/>
+	<item key="OpenFansSuccess"  value="启动风机成功"/>
+	<item key="CloseFansFail"  value="关闭风机失败"/>
+	<item key="CloseFansSuccess"  value="关闭风机成功"/>
+	<item key="StartFans"  value="正在启动风机..."/>
+	<item key="StartTempControlSystem"  value="正在启动温控系统..."/>
+	<item key="InitAccessoriesFail" value="初始化配件失败:%s" />
+	<item key="ScreenCommError"  value="液晶屏通信异常" />
+	<!-- coreService -->
+	<item key="LoadFileError"        value="载入 %s发生错误:%s"/>
+	<item key="GetUnitInfoEmpty"     value="获取分区信息为空"/>
+	<item key="DataIsFull"           value="数据缓存区已满"/>
+	<item key="SyncStepExceptionAndPause"    value="发现分区同步步次异常,暂停分区" />
+	<item key="ChnSyncStepErr"    value="当前步次%d与分区步次%d不一致,关闭通道" />
+	<item key="ChnSyncLoopErr"    value="当前循环%d与分区循环%d不一致,关闭通道" />
+	<item key="PressureChange"    value="检测到当前步次压力%d -> 下步次压力%d,开始变压" />
+	<item key="MaintainNotExecute" value="因设备维护无法操作" />
+	<item key="ResetRunning"       value="设备正在运行无法复位" />
+	
+	<!-- 通信 -->
+	<item key="CommError"               value="通信回复错误"/>
+	<item key="CommTimeout"             value="通信回复超时"/>
+	<item key="ResponseError"           value="通信回复结果码错误,错误码:%s"/>
+	
+	<!-- workmode -->
+	<item key="LogicChangeWorkmodeFail"     value="逻辑板%d切换工作模式%s失败,%s" />
+	<item key="CheckChangeWorkmodeFail"     value="回检板%d切换工作模式%s失败,%s" />
+	<!-- power off -->
+	<item key="PowerOffPauseDevice"   value="检测到发生断电，开始暂停流程!" />
+	<item key="SavePowerOffStateData"  value="开始保存断电前的数据和状态" />
+	<item key="PowerResetPauseDevice"  value="设备正在自动复位，开始暂停流程" />
+	<item key="PowerResetResumeDevice"  value="设备复位完毕，开始恢复流程" />
+	<item key="PowerResetingDevice"    value="正在复位驱动板，请稍后"/>
+	<item key="PowerOffState"   value="主控板约在60s后断电,系统进入断电待机状态" />
+	
+	
+	<!-- network -->
+	<item key="NetworkOff"               value="设备已掉线"/>
+	<item key="NetworkOn"                value="设备已上线"/>
+	<item key="DeviceEnterOfflineRun"    value="设备已进入离线运行模式" />
+	<item key="DeviceExitOfflineRun"    value="设备已退出离线运行模式" />
+	<!-- 初始化 -->
+	
+	
+	<item key="StartingSystem"  value="正在启动系统..."/>
+	<item key="InitScreenSuccess"  value="初始化液晶屏成功"/>
+	<item key="InitFansSuccess"  value="初始化风机成功"/>
+	<item key="InitPowersSuccess"  value="初始化逆变电源成功"/>
+    <item key="InitMechanismSuccess"  value="初始化运动机构成功"/>
+	<item key="InitProbesSuccess"  value="初始化探测器成功"/>
+	<item key="InitSmogsSuccess"  value="初始化烟雾报警器成功"/>
+	<item key="InitDoorsSuccess"  value="初始化门近开关成功"/>
+    <item key="InitStateLightsSuccess"  value="初始化状态指示灯成功"/>
+	<item key="InitAudioLightsSuccess"  value="初始化声光报警器成功"/>
+	<item key="InitTempControlSuccess"  value="初始化温控系统成功"/>
+	<item key="InitLogicboard"  value="初始化逻辑板%d"/>
+	<item key="InitCheckboard"  value="初始化回检板%d"/>
+	<item key="InitDriverboard"  value="初始化驱动板%d"/>
+	<item key="InitControlunitSuccess"  value="初始化控制分区完成"/>
+	<item key="InitSystemSuccess" value="初始化设备成功" />
+	<item key="InitSystemFail" value="初始化设备发生错误:%s" />
+	<item key="InitDeviceAlertManagerSuccess" value="初始化报警管理器成功"/>
+	
+	
+	<item key="SelfCheckingFirms" value="正在自检设备配件..."/>
+	<item key="SelfCheckingFirmsOver" value="自检设备配件完成!"/>
+	<item key="SelfCheckingMustBeUdt" value="自检失败，请先暂停或停止流程" />
+	<item key="SelfCheckingIds" value="正在自检设备校准ID..."/>
+	<item key="SelfCheckingCores" value="正在自检设备核心部件..." />
+	<item key="ChangeCheckFlash" value="发现回检板%d校准ID变更，开始写入校准系数"/>
+	<item key="ChangeDriverFlash" value="发现分区%d校准ID变更,开始写校准系数"/>
+	<item key="ProgramFailed" value="发现有核心部件未烧录程序" />
+	<item key="ProcedureNotExist" value="流程不存在"/>
+	
+	
+	<!-- protection -->
+	<item key="VoltageConstProtection" value="恒压保护[检测到电压%.1fmV已偏离恒定值%.1fmV]"/>
+	<item key="CurrentConstProtection" value="恒流保护[检测到电流%.1fmA已偏离恒定值%.1fmA]"/>
+	<item key="VoltageDescendProtection" value="电压下降保护[检测到电压发生下降,"/>
+	<item key="VoltageAscendProtection" value="电压上升保护[检测到电压发生上升,"/>
+	<!-- accessories -->
+	<item key="TempMeterOver" value="温控表发生超温报警" />
+	<item key="DeviceTempUpper" value="设备温度%.1f℃超设定上限%.1f℃"/>
+	<item key="DeviceTempLower" value="设备温度%.1f℃低于设定下限%.1f℃"/>
+	<item key="TempMeterError"  value="温控表%d发生故障" />
+	<item key="TempProtectNotOpen" value="在恒温保护开关打开后设备必须开启温控系统后才能运行!" />
+	<item key="TempProtectNotRange" value="当前设备温度%.1f℃未处于恒温范围，请等待!" />
+	<item key="TempOverUnderCloseSystem" value="在恒温系统关闭后设备温度%.1f℃仍超过安全警戒值%.1f℃" />
+	<item key="FirmIsDisabled" value="固件已被禁用，禁止操作" />
+	<item key="TempProtectNotInRange" value="当前设备温度未稳定在恒温(%.1f℃)范围内"/>
+	
+	<!-- chn -->
+	<item  key="ChnStartup" value="通道已启动测试"/>
+	<item  key="ChnPause" value="通道已暂停"/>
+	<item  key="ChnResume" value="通道已恢复测试"/>
+	<item  key="ChnStop" value="通道已停止"/>
+	<item  key="ChnSkipStep" value="通道因%s跳转到步次%d"/>
+	<item  key="ChnClose" value="通道因%s关闭通道"/>
+	<item  key="ChnAlert" value="%s"/>
+	
+	<!-- power manager -->
+	<item  key="AuxiliaryPowerException"  value="辅助电源故障，请联系工程师解决!" />
+	<item  key="PowerOperateException"  value="打开或关闭逆变电源失败" />
+	<item  key="WaitForPowerOn"  value="等待电源启动.." />
+	<item  key="PowerNotEnough"  value="当前正常的逆变电源无法满足最小个数:%d"/>
+	<item  key="PowerNotMeetProcedure"    value="当前有效的逆变电源数%d无法满足流程需求"/>
+	<item  key="PowerNotMeetMinNeed"     value="当前有效的逆变电源数%d无法满足设备最小需求%d"/>
+	<item  key="PowerBackup"        value="因电源发生故障已启动同组备份电源"/>
+	<item  key="Inverter"           value="逆变电源" />
+	<item  key="AuxiliaryPower"     value="辅助电源" />
+	<item  key="Breakdown"     value="发生故障!" />
+	<item  key="PowerCountErr"  value="错误的逆变电源配置个数:与分组个数不匹配"/>
+	<item  key="PowerFaultRecovery" value="电源故障，开始尝试重启电源修复"/>
+	
+	<!-- cylinder -->
+	<item  key="CylinderClosing"   value="正在闭合机构，请稍后.." />
+	<item  key="CylinderOpening"   value="正在展开机构，请稍后.." />
+	<item  key="CylinderChecking"  value="正在检查针床机构，请稍后.." />
+	
+	<!-- 升级 -->
+	<item key="UpgradeCoreFail"  value="升级主控程序失败"   />
+	<item key="UpgradeCoreCfgFail"  value="升级主控配置文件失败"   />
+	<item key="UpgradeLogicFail"  value="升级逻辑板程序失败"   />
+	<item key="UpgradeCheckFail"  value="升级回检板程序失败"   />
+	<item key="UpgradeLogicDriverFail"  value="升级逻辑驱动程序失败"   />
+	<item key="UpgradeCheckDriverFail"  value="升级回检驱动程序失败"   />
+	
+	
+	<item key="UpgradeCoreMissing"  value="主控程序文件丢失"   />
+	<item key="UpgradeCoreCfgMissing"  value="主控配置文件丢失"   />
+	<item key="UpgradeLogicMissing"  value="逻辑板程序文件丢失"   />
+	<item key="UpgradeCheckMissing"  value="回检板程序文件丢失"   />
+	<item key="UpgradeLogicDriverMissing"  value="逻辑驱动程序文件丢失"   />
+	<item key="UpgradeCheckDriverMissing"  value="回检驱动程序文件丢失"   />
+	
+	<item key="UpgradeFileMissing"  value="%s程序文件丢失"/>
+	<item key="UpgradeFileFail"     value="升级%s程序文件失败:%s"/>
+	<item key="UpgradeFileStateErr" value="升级%s程序文件失败:设备状态未进入升级模式" />
+	
+	<item key="UpgradeFailWithFormation" value="设备正在运行升级失败" />
+	<item key="UpgradeFailNoInUpgradeMode" value="设备未进入升级模式" />
+	
+	<!-- 报警 -->
+	<item key="CheckDeviceOverVolt" value="超压报警[回检板检测到电压%.1fmV已超过设定值%.1fmV]" />
+	<item key="CoreDeviceOverVolt" value="超压报警[主控检测到电压%.1fmV已超过设定值%.1fmV]" />
+	<item key="CheckPoleReverse" value="极性反接[回检板检测到电芯反接]"/>
+	<item key="LogicPoleReverse" value="极性反接[下位机检测到电芯反接]"/>
+	<item key="LogicBatOverVolt" value="电压超限[下位机检测到电压%.1fmV已超过设定值%.1fmV]" />
+	<item key="LogicBatOverCurr" value="电流超限[下位机检测到电流%.1fmA已超过设定值%.1fmA]" />
+	<item key="CheckVoltageOver" value="超压报警[下位机检测到超压异常,关闭通道]"  />
+	
+	<item key="DeviceError" value="设备发生故障,暂停设备流程"/>
+	<item key="LogicCommError" value="逻辑板%d发生长时间通信失联，请重启设备"/>
+	<item key="DriverCommError" value="驱动板%d发生长时间通信失联，请联系工程师"/>
+	<item key="CapacityCoefficien" value="容量系数保护[检测当前步次累计容量%.1fmAh,已超过流程标准容量%.1fmAh * 容量系数%.3f]"/>
+	<item key="CoreBatOverCurr" value="电流超限[主控检测到电流%.1fmA已高于设定值%.1fmA]"/>
+	<item key="CoreBatOverVolt" value="电压超限[主控检测到电压%.1fmV已高于设定值%.1fmV]"/>
+	<item key="StartVoltLower" value="启动电压保护[起始电压%.1fmV已低于设定下限值%.1fmV]"/>
+	<item key="StartVoltUpper" value="启动电压保护[起始电压%.1fmV已高于设定上限值%.1fmV]"/>
+	<item key="EndVoltLower" value="结束电压保护[结束电压%.1fmV已低于设定下限值%.1fmV]"/>
+	<item key="EndVoltUpper" value="结束电压保护[结束电压%.1fmV已高于设定上限值%.1fmV]"/>
+	<item key="EndCapacityLower" value="结束容量保护[结束容量%.1fmAh已低于下限值%.1fmAh]"/>
+	<item key="EndCapacityUpper" value="结束容量保护[结束容量%.1fmAh已高于上限值%.1fmAh]"/>
+	<item key="StartVoltOffset"  value="压差保护[检测到主电压%.1fmV,备份电压%.1fmV,功率电压%.1fmV偏差过大,超过阀值%.1fmV]"/>
+	<item key="StepChangeExcept" value="步次保护[下位机未按条件正常转步次]"/>
+	<item key="LogicOverTime"  value="超时保护[驱动板检测到步次已运行%ds,已超设置值%ds]"/>
+	<item key="LogicUnknownExcept" value="下位机异常保护[驱动板发生异常，异常码:%d]" />
+	<!-- cc -->
+	<item key="CCVoltUpper" value="cc保护[当前电压%.1fmV已高于上限值%.1fmV]"/>
+	<item key="CCVoltLower" value="cc保护[当前电压%.1fmV已低于下限值%.1fmV]"/>
+	<item key="CCCurOffset" value="cc保护[电流超差波动%.1fmA->%.1fmA]" />
+	<item key="CCVoltOffset2000u" value="cc保护[2000mAh以上电压超差波动%.1fmV->%.1fmV]" />
+	<item key="CCVoltOffset2000d" value="cc保护[2000mAh以下电压超差波动%.1fmV->%.1fmV]" />
+	<item key="CCCapacityUpper" value="cc保护[步次容量%.1fmAh已超过设定值%.1fmAh]" />
+	<item key="CCTimeUpper" value="cc保护[步次时间%ds已超过设定值%ds]" />
+	<item key="CCVoltDesc" value="cc保护[电压发生连续下降," />
+	<item key="CCSlopeUpper" value="cc保护[电压斜率上升过快,%ds内从%.1fmV->%.1fmV]"/>
+	<item key="CCSlopeLower" value="cc保护[电压斜率上升过慢,%ds内从%.1fmV->%.1fmV]"/>
+	
+	<!-- cv -->
+	<item key="CVCurUpper" value="cv保护[当前电流%.1fmA已高于上限值%.1fmA]"/>
+	<item key="CVCurLower" value="cv保护[当前电流%.1fmA已低于下限值%.1fmA]"/>
+	<item key="CVVoltOffset" value="cv保护[电压超差波动%.1fmV->%.1fmV]" />
+	<item key="CVCapacityUpper" value="cv保护[步次容量%.1fmAh已高于设定值%.1fmAh]" />
+	<item key="CVTimeUpper" value="cv保护[步次时间%ds已高于设定值%ds]" />
+	<item key="CVCurAsc" value="cv保护[电流发生连续上升,"/>
+	
+	<!-- dc -->
+	<item key="DCVoltUpper" value="dc保护[当前电压%.1fmV已高于上限值%.1fmV]"/>
+	<item key="DCVoltLower" value="dc保护[当前电压%.1fmV已低于下限值%.1fmV]"/>
+	<item key="DCCurOffset" value="dc保护[电流超差波动%.1fmA->%.1fmA]" />
+	<item key="DCVoltOffset2000u" value="dc保护[2000mAh以上电压超差波动%.1fmV->%.1fmV]" />
+	<item key="DCVoltOffset2000d" value="dc保护[2000mAh以下电压超差波动%.1fmV->%.1fmV]" />
+	<item key="DCCapacityUpper" value="dc保护[步次容量%.1fmAh已超过设定值%.1fmAh]" />
+	<item key="DCTimeUpper" value="dc保护[步次时间%ds已超过设定值%ds]" />
+	<item key="DCVoltAsc" value="dc保护[电压发生连续上升," />
+	
+	<item key="DCSlopeUpper" value="dc保护[电压斜率下降过快,%ds内从%.1fmV->%.1fmV]"/>
+	<item key="DCSlopeLower" value="dc保护[电压斜率下降过慢,%ds内从%.1fmV->%.1fmV]"/>
+	
+	<!-- first cc -->
+	<item key="FirstCCProtect" value="首步次CC保护[步次运行时间%ds后检测电压：%.1fmV,不在设定范围(%.1fmV-%.1fmV)]" />
+	
+	<!-- sleep -->
+	<item key="SleepProtect" value="休眠保护[电压超差波动%.1fmV->%.1fmV]" />
+	
+	<!-- OTHER -->
+	<item key="VoltageOffset" value="主备压差保护[主电压%.1fmV与备份电压%.1fmV偏差超过设定保护值%.1fmV]"   />
+	<item key="ResisterOffset" value="接触保护[接触电阻%.1fmΩ已高于设定值%.1fmΩ]" />
+	<item key="CurrLowerProtect" value="电流保护[当前电流%.1fmA已低于等于最低运行电流要求%.1fmA]" />;
+	<item key="StepTimeout" value="步次时间保护[检测到步次%d已运行%ds,超过时间保护值%ds" />
+	<item key="ChnCurrentException" value="通道%d在锁定或报警状态有电流%.1fmA,切断逆变电源并暂停流程" />
+	<item key="ChnOverVoltException" value="通道%d在超压关闭后电压仍上升，切断逆变电源并暂停流程" />
+	<item key="ChnStepChangeException" value="通道%d未按条件正常转步次,切断逆变电源并暂停流程"/>
+	<item key="ChnContinueAlertException" value="通道%d连续报警超过3次都未正常关闭通道，切断逆变电源并暂停流程"/>
+	
+	<item key="SyncNotSupport" value="在同步模式暂不支持该操作" />
+	<item key="CanNotRecovery" value="设备未处于正常可修复状态" />
+	
+	<item key="CannotOptInRunning" value="因设备正在运行无法执行操作"  />
+	
+	<!-- procedure support -->
+	<item key="LogicProcedureNotSupport" value="该设备不支持独立逻辑分区功能" />
+	<item key="DriverProcedureNotSupport" value="该设备不支持独立驱动分区功能" />
+	
+	<!-- driver  -->
+	<item key="DriverBaseProtectProtectException" value="驱动板%d基础保护下发失败:%s"/>
+	<item key="DriverPoleProtectProtectException" value="驱动板%d极性保护下发失败:%s"/>
+	<item key="DriverEnterWorkmodeException" value="驱动板%d进入工作模式失败:%s"/>
+	<item key="DriverSelfCheckingErrCode"  value="驱动板%d自检通信错误:%s"></item>
+	<item key="DriverSelfCheckingTimeout"  value="驱动板%d自检通信超时，请确认驱动板地址是否正确?"/>
+	<item key="DriverSelfCheckingVersionErrCode"  value="驱动板%d自检软件版本通信错误:%s"  />
+	<item key="DriverSelfCheckingVersionTimeout" value="驱动板%d自检软件版本通信超时" />
+	
+	<!-- pressure change -->
+	<item key="PressureChangeTimeOutException" value="因变压时间超过%ds仍未变压成功，对通道进行保护"/>
+	
+</language>

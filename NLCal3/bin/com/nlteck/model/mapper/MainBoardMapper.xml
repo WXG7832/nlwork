@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nlteck.model.mapper.MainBoardMapper">
+
+	<sql id="mainboardSection">
+		mb.id as mb_id,
+		mb.name as mb_name,
+		mb.ip as mb_ip,
+		mb.customer as mb_customer,
+		mb.product as mb_product,
+		mb.barcode as
+		mb_barcode,
+		mb.createDate as mb_createDate,
+		mb.testDate as mb_testDate
+	</sql>
+
+	<select id="select" resultMap="mainBoardResult"
+		parameterType="map">
+
+		select
+		<include refid="mainboardSection"></include>
+		,
+		<include
+			refid="com.nlteck.model.mapper.LogicBoardMapper.logicSection"></include>
+		,
+		<include
+			refid="com.nlteck.model.mapper.DriverBoardMapper.driverSection"></include>
+		,
+		<include
+			refid="com.nlteck.model.mapper.ChannelMapper.channelSection"></include>
+		,
+		<include
+			refid="com.nlteck.model.mapper.ProcedureMapper.procedureSection"></include>
+		,
+		<include
+			refid="com.nlteck.model.mapper.PlanDotMapper.planDotSection"></include>
+		<!-- <include refid="com.nlteck.model.mapper.DataDotMapper.dataDotSection"></include> -->
+		from mainboard_table mb
+		left join logicboard_table logic on
+		logic.mainboard_id = mb.id
+		left join driverboard_table driver on
+		driver.logicboard_id = logic.id
+		left join channel_table channel on
+		channel.driver_id = driver.id
+		left join procedure_table p on
+		mb.procedure_id = p.id
+		left join plandot_table pd on pd.procedure_id =
+		p.id
+		<!--left join dot_table d on d.channel_id = channel.id -->
+		<where>
+			<if test="name != null">and mb.name = #{name}</if>
+			<if test="id != null">and mb.id = #{id}</if>
+			<if test="ip != null">and mb.ip = #{ip}</if>
+			<if test="barcode != null">and mb.barcode = #{barcode}</if>
+			<if test="customer != null">and mb.customer = #{customer}</if>
+			<if test="product != null">and mb.product= #{product}</if>
+		</where>
+	</select>
+
+	<insert id="insert" parameterType="MainBoard" keyProperty="id"
+		useGeneratedKeys="true">
+		insert into
+		mainboard_table(name,ip,barcode,customer,product,createDate,testDate)
+		values(#{name},#{ip},#{barcode},#{customer},#{product},#{createDate},#{testDate})
+	</insert>
+
+	<delete id="delete" parameterType="map">
+		delete from mainboard_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="name != null">and name = #{name}</if>
+			<if test="barcode != null">and barcode = #{barcode}</if>
+		</where>
+
+	</delete>
+
+	<update id="update" parameterType="map">
+		update mainboard_table
+		<set>
+			<if test="name != null">,name=#{name}</if>
+			<if test="ip != null">,ip=#{ip}</if>
+			<if test="barcode != null">,barcode=#{barcode}</if>
+			<if test="testDate != null">,testDate=#{testDate}</if>
+			<if test="procedureId != null">,procedure_id = #{procedureId}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<resultMap type="MainBoard" id="mainBoardResult">
+		<id property="id" column="mb_id" />
+		<result property="name" column="mb_name" />
+		<result property="ip" column="mb_ip" />
+		<result property="barcode" column="mb_barcode" />
+		<result property="customer" column="mb_customer" />
+		<result property="product" column="mb_product" />
+		<result property="createDate" column="mb_createDate" />
+		<result property="testDate" column="mb_testDate" />
+		<association property="procedure" javaType="Procedure"
+			resultMap="com.nlteck.model.mapper.ProcedureMapper.procedureResult" />
+		<collection property="logicBoards" ofType="LogicBoard"
+			resultMap="com.nlteck.model.mapper.LogicBoardMapper.logicResult"></collection>
+
+	</resultMap>
+</mapper>

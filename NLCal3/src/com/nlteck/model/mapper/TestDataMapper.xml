@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nlteck.model.mapper.TestDataMapper">
+
+	<select id="select" resultType="TestData" parameterType="map">
+		select * from testdata_table
+		<where>
+			<if test="testName != null">and test_name = #{testName}</if>
+		</where>
+	</select>
+
+	<insert id="insert" parameterType="TestData" keyProperty="id"
+		useGeneratedKeys="true">
+		insert into testdata_table
+		(
+		id,
+		test_name,
+		test_device,
+		start_time,
+		end_time
+		)
+		values
+		(
+		#{id},
+		#{testName},
+		#{testDevice},
+		#{startTime},
+		#{endTime}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="map">
+		delete from testdata_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="testName != null">and test_name = #{testName}</if>
+		</where>
+	</delete>
+
+	<update id="update" parameterType="map">
+		update testdata_table
+		<set>
+			<if test="endTime != null">end_time = #{endTime}</if>
+		</set>
+		where test_name = #{testName}
+	</update>
+
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root life="28198000">
+  <drivers>
+    <driver index="0" life="0"/>
+    <driver index="1" life="0"/>
+    <driver index="2" life="0"/>
+    <driver index="3" life="0"/>
+    <driver index="4" life="0"/>
+    <driver index="5" life="0"/>
+    <driver index="6" life="0"/>
+    <driver index="7" life="0"/>
+  </drivers>
+  <inverters>
+    <inverter index="0" life="0"/>
+    <inverter index="1" life="0"/>
+  </inverters>
+  <coolFans/>
+  <turbos/>
+</root>

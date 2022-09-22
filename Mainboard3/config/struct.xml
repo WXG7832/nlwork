@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<struct mode="DEVICE">
+  <cu index="0" testName="">
+    <driver index="0"/>
+    <driver index="1"/>
+    <driver index="2"/>
+    <driver index="3"/>
+    <driver index="4"/>
+    <driver index="5"/>
+    <driver index="6"/>
+    <driver index="7"/>
+  </cu>
+</struct>

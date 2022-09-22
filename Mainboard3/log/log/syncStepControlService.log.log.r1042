@@ -1,0 +1,611 @@
+2020-12-22 10:47:08  INFO -pressure change :0 -> 2000
+2020-12-22 11:17:08  INFO -skip sync step 
+2020-12-22 11:18:49  INFO -skip sync step 
+2020-12-22 11:21:48  INFO -skip sync step 
+2020-12-22 11:28:11  INFO -skip sync step 
+2020-12-22 11:28:13  INFO -ok,allow sync step skip
+2020-12-22 11:28:14  INFO -skip sync step 
+2020-12-22 11:28:15  INFO -ok,allow sync step skip
+2020-12-22 11:28:16  INFO -skip sync step 
+2020-12-22 11:28:16  INFO -ok,allow sync step skip
+2020-12-22 11:28:17  INFO -skip sync step 
+2020-12-22 11:28:17  INFO -ok,allow sync step skip
+2020-12-22 11:28:18  INFO -skip sync step 
+2020-12-22 11:31:25  INFO -skip sync step 
+2020-12-22 11:31:28  INFO -ok,allow sync step skip
+2020-12-22 11:31:28  INFO -skip sync step 
+2020-12-22 11:31:28  INFO -ok,allow sync step skip
+2020-12-22 11:31:29  INFO -skip sync step 
+2020-12-22 11:31:31  INFO -ok,allow sync step skip
+2020-12-22 11:31:31  INFO -skip sync step 
+2020-12-22 11:31:31  INFO -ok,allow sync step skip
+2020-12-22 11:31:33  INFO -skip sync step 
+2020-12-22 11:32:45  INFO -skip sync step 
+2020-12-22 11:32:45  INFO -ok,allow sync step skip
+2020-12-22 11:32:47  INFO -skip sync step 
+2020-12-22 11:32:47  INFO -ok,allow sync step skip
+2020-12-22 11:32:49  INFO -skip sync step 
+2020-12-22 11:32:49  INFO -ok,allow sync step skip
+2020-12-22 11:32:51  INFO -skip sync step 
+2020-12-22 11:32:51  INFO -ok,allow sync step skip
+2020-12-22 11:32:53  INFO -skip sync step 
+2020-12-22 11:37:12  INFO -skip sync step 
+2020-12-22 11:37:12  INFO -ok,allow sync step skip
+2020-12-22 11:37:14  INFO -skip sync step 
+2020-12-22 11:37:14  INFO -ok,allow sync step skip
+2020-12-22 11:37:16  INFO -skip sync step 
+2020-12-22 11:37:16  INFO -ok,allow sync step skip
+2020-12-22 11:37:18  INFO -skip sync step 
+2020-12-22 11:49:09  INFO -send skip sync step command 
+2020-12-22 11:49:11  INFO -send skip sync step command 
+2020-12-22 11:49:13  INFO -send skip sync step command 
+2020-12-22 11:49:15  INFO -send skip sync step command 
+2020-12-22 11:49:17  INFO -send skip sync step command 
+2020-12-22 11:49:19  INFO -send skip sync step command 
+2020-12-22 11:49:21  INFO -send skip sync step command 
+2020-12-22 11:49:23  INFO -send skip sync step command 
+2020-12-22 11:49:25  INFO -send skip sync step command 
+2020-12-22 11:49:27  INFO -send skip sync step command 
+2020-12-22 11:49:29  INFO -send skip sync step command 
+2020-12-22 11:49:31  INFO -send skip sync step command 
+2020-12-22 11:49:33  INFO -send skip sync step command 
+2020-12-22 11:52:16  INFO -send skip sync step command 
+2020-12-22 11:52:18  INFO -send skip sync step command 
+2020-12-22 11:52:20  INFO -send skip sync step command 
+2020-12-22 11:52:22  INFO -send skip sync step command 
+2020-12-22 11:52:26  INFO -send skip sync step command 
+2020-12-22 11:59:38  INFO -send skip sync step command 
+2020-12-22 11:59:40  INFO -send skip sync step command 
+2020-12-22 11:59:42  INFO -send skip sync step command 
+2020-12-22 11:59:44  INFO -send skip sync step command 
+2020-12-22 12:06:04  INFO -send skip sync step command 
+2020-12-22 12:06:06  INFO -send skip sync step command 
+2020-12-22 12:06:08  INFO -send skip sync step command 
+2020-12-22 12:06:10  INFO -send skip sync step command 
+2020-12-22 12:06:12  INFO -send skip sync step command 
+2020-12-22 13:04:00  INFO -send skip sync step command 
+2020-12-22 13:04:02  INFO -send skip sync step command 
+2020-12-22 13:04:04  INFO -send skip sync step command 
+2020-12-22 13:04:06  INFO -send skip sync step command 
+2020-12-22 13:04:10  INFO -send skip sync step command 
+2020-12-22 13:08:31  INFO -send skip sync step command 
+2020-12-22 13:08:33  INFO -send skip sync step command 
+2020-12-22 13:08:35  INFO -send skip sync step command 
+2020-12-22 13:08:37  INFO -send skip sync step command 
+2020-12-22 13:08:41  INFO -send skip sync step command 
+2020-12-22 13:25:14  INFO -send skip sync step command 
+2020-12-22 13:25:16  INFO -send skip sync step command 
+2020-12-22 13:25:18  INFO -send skip sync step command 
+2020-12-22 13:25:20  INFO -send skip sync step command 
+2020-12-22 13:25:22  INFO -send skip sync step command 
+2020-12-22 13:28:45  INFO -send skip sync step command 
+2020-12-22 13:28:47  INFO -send skip sync step command 
+2020-12-22 13:28:49  INFO -send skip sync step command 
+2020-12-22 13:28:51  INFO -send skip sync step command 
+2020-12-22 13:28:55  INFO -send skip sync step command 
+2020-12-22 13:32:42  INFO -send skip sync step command 
+2020-12-22 13:32:44  INFO -send skip sync step command 
+2020-12-22 13:32:46  INFO -send skip sync step command 
+2020-12-22 13:32:48  INFO -send skip sync step command 
+2020-12-22 13:32:50  INFO -send skip sync step command 
+2020-12-22 13:36:10  INFO -send skip sync step command 
+2020-12-22 13:36:12  INFO -send skip sync step command 
+2020-12-22 13:36:14  INFO -send skip sync step command 
+2020-12-22 13:36:16  INFO -send skip sync step command 
+2020-12-22 13:36:20  INFO -send skip sync step command 
+2020-12-22 13:46:05  INFO -send skip sync step command 
+2020-12-22 13:46:07  INFO -send skip sync step command 
+2020-12-22 13:46:09  INFO -send skip sync step command 
+2020-12-22 13:46:11  INFO -send skip sync step command 
+2020-12-22 13:46:15  INFO -send skip sync step command 
+2020-12-22 16:38:27  INFO -send skip sync step command 
+2020-12-22 16:38:47  INFO -send skip sync step command 
+2020-12-22 21:02:30  INFO -send skip sync step command 
+2020-12-22 21:10:43  INFO -send skip sync step command 
+2020-12-22 21:14:46  INFO -send skip sync step command 
+2020-12-22 21:19:13  INFO -send skip sync step command 
+2020-12-29 09:50:59  INFO -send skip sync step command 
+2020-12-29 10:03:54  INFO -send skip sync step command 
+2020-12-29 10:04:14  INFO -send skip sync step command 
+2020-12-29 19:42:03  INFO -send skip sync step command 
+2020-12-29 19:42:21  INFO -send skip sync step command 
+2021-04-21 15:37:22  INFO -pressure change :400 -> 800
+2021-04-21 15:37:24  INFO -pressure change :400 -> 800
+2021-04-21 15:37:34  INFO -pressure change :400 -> 800
+2022-05-13 09:43:48  INFO -previous step change pressure:2chn:1
+2022-05-13 09:43:48  INFO -previous step change pressure:2chn:3
+2022-05-13 09:43:48  INFO -previous step change pressure:2chn:4
+2022-05-13 09:43:48  INFO -previous step change pressure:2chn:5
+2022-05-13 09:43:48  INFO -previous step change pressure:2chn:6
+2022-05-13 09:43:48  INFO -previous step change pressure:2chn:7
+2022-05-13 09:43:48  INFO -previous step change pressure:2chn:8
+2022-05-13 09:43:48  INFO -syncChannels size = 7
+2022-05-13 13:43:47  INFO -previous step change pressure:2chn:1
+2022-05-13 13:43:47  INFO -previous step change pressure:2chn:3
+2022-05-13 13:43:47  INFO -previous step change pressure:2chn:4
+2022-05-13 13:43:47  INFO -previous step change pressure:2chn:5
+2022-05-13 13:43:47  INFO -previous step change pressure:2chn:6
+2022-05-13 13:43:47  INFO -previous step change pressure:2chn:7
+2022-05-13 13:43:47  INFO -previous step change pressure:2chn:8
+2022-05-13 13:43:47  INFO -syncChannels size = 7
+2022-05-13 13:49:19  INFO -previous step change pressure:2chn:1
+2022-05-13 13:49:19  INFO -previous step change pressure:2chn:3
+2022-05-13 13:49:19  INFO -previous step change pressure:2chn:4
+2022-05-13 13:49:19  INFO -previous step change pressure:2chn:5
+2022-05-13 13:49:19  INFO -previous step change pressure:2chn:6
+2022-05-13 13:49:19  INFO -previous step change pressure:2chn:7
+2022-05-13 13:49:19  INFO -previous step change pressure:2chn:8
+2022-05-13 13:49:19  INFO -syncChannels size = 7
+2022-05-13 14:54:52  INFO -previous step change pressure:2chn:1
+2022-05-13 14:54:52  INFO -previous step change pressure:2chn:3
+2022-05-13 14:54:52  INFO -previous step change pressure:2chn:4
+2022-05-13 14:54:52  INFO -previous step change pressure:2chn:5
+2022-05-13 14:54:52  INFO -previous step change pressure:2chn:6
+2022-05-13 14:54:52  INFO -previous step change pressure:2chn:7
+2022-05-13 14:54:52  INFO -previous step change pressure:2chn:8
+2022-05-13 14:54:52  INFO -syncChannels size = 7
+2022-05-13 15:09:40  INFO -previous step change pressure:2chn:1
+2022-05-13 15:09:40  INFO -previous step change pressure:2chn:3
+2022-05-13 15:09:40  INFO -previous step change pressure:2chn:4
+2022-05-13 15:09:40  INFO -previous step change pressure:2chn:5
+2022-05-13 15:09:40  INFO -previous step change pressure:2chn:6
+2022-05-13 15:09:40  INFO -previous step change pressure:2chn:7
+2022-05-13 15:09:40  INFO -previous step change pressure:2chn:8
+2022-05-13 15:09:40  INFO -syncChannels size = 7
+2022-05-13 15:16:18  INFO -previous step change pressure:2chn:1
+2022-05-13 15:16:18  INFO -previous step change pressure:2chn:3
+2022-05-13 15:16:18  INFO -previous step change pressure:2chn:4
+2022-05-13 15:16:18  INFO -previous step change pressure:2chn:5
+2022-05-13 15:16:18  INFO -previous step change pressure:2chn:6
+2022-05-13 15:16:18  INFO -previous step change pressure:2chn:7
+2022-05-13 15:16:18  INFO -previous step change pressure:2chn:8
+2022-05-13 15:16:18  INFO -syncChannels size = 7
+2022-05-13 15:16:47  INFO -resume all sync channels:7
+2022-05-13 15:19:39  INFO -resume all sync channels:7
+2022-05-13 15:24:57  INFO -previous step change pressure:2chn:1
+2022-05-13 15:24:57  INFO -previous step change pressure:2chn:3
+2022-05-13 15:24:57  INFO -previous step change pressure:2chn:4
+2022-05-13 15:24:57  INFO -previous step change pressure:2chn:5
+2022-05-13 15:24:57  INFO -previous step change pressure:2chn:6
+2022-05-13 15:24:57  INFO -previous step change pressure:2chn:7
+2022-05-13 15:24:57  INFO -previous step change pressure:2chn:8
+2022-05-13 15:24:57  INFO -syncChannels size = 7
+2022-05-13 15:24:59  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:01  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:03  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:05  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:07  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:09  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:11  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:13  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:15  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:17  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:19  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:21  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:23  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:25  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:27  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:29  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:31  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:33  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:35  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:37  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:39  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:41  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:43  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:45  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:47  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:49  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:51  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:53  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:55  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:57  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:25:59  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:26:01  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:26:03  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:26:05  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:26:07  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:26:09  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:26:11  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:03  INFO -previous step change pressure:2chn:1
+2022-05-13 15:27:03  INFO -previous step change pressure:2chn:3
+2022-05-13 15:27:03  INFO -previous step change pressure:2chn:4
+2022-05-13 15:27:03  INFO -previous step change pressure:2chn:5
+2022-05-13 15:27:03  INFO -previous step change pressure:2chn:6
+2022-05-13 15:27:03  INFO -previous step change pressure:2chn:7
+2022-05-13 15:27:03  INFO -previous step change pressure:2chn:8
+2022-05-13 15:27:03  INFO -syncChannels size = 7
+2022-05-13 15:27:06  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:08  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:10  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:12  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:14  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:16  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:18  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:20  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:22  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:24  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:26  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:28  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:30  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:32  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:34  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:36  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:38  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:40  INFO -previous step change pressure:2chn:1
+2022-05-13 15:27:40  INFO -previous step change pressure:2chn:3
+2022-05-13 15:27:40  INFO -previous step change pressure:2chn:4
+2022-05-13 15:27:40  INFO -previous step change pressure:2chn:5
+2022-05-13 15:27:40  INFO -previous step change pressure:2chn:6
+2022-05-13 15:27:40  INFO -previous step change pressure:2chn:7
+2022-05-13 15:27:40  INFO -previous step change pressure:2chn:8
+2022-05-13 15:27:40  INFO -syncChannels size = 7
+2022-05-13 15:27:42  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:44  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:27:46  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:33:33  INFO -previous step change pressure:2chn:1
+2022-05-13 15:33:33  INFO -previous step change pressure:2chn:3
+2022-05-13 15:33:33  INFO -previous step change pressure:2chn:4
+2022-05-13 15:33:33  INFO -previous step change pressure:2chn:5
+2022-05-13 15:33:33  INFO -previous step change pressure:2chn:6
+2022-05-13 15:33:33  INFO -previous step change pressure:2chn:7
+2022-05-13 15:33:33  INFO -previous step change pressure:2chn:8
+2022-05-13 15:33:33  INFO -syncChannels size = 7
+2022-05-13 15:33:58  INFO -resume all sync channels:7
+2022-05-13 15:34:02  INFO -previous step change pressure:2chn:1
+2022-05-13 15:34:02  INFO -previous step change pressure:2chn:3
+2022-05-13 15:34:02  INFO -previous step change pressure:2chn:4
+2022-05-13 15:34:02  INFO -previous step change pressure:2chn:5
+2022-05-13 15:34:02  INFO -previous step change pressure:2chn:6
+2022-05-13 15:34:02  INFO -previous step change pressure:2chn:7
+2022-05-13 15:34:02  INFO -previous step change pressure:2chn:8
+2022-05-13 15:34:02  INFO -syncChannels size = 7
+2022-05-13 15:34:08  INFO -resume all sync channels:7
+2022-05-13 15:34:12  INFO -previous step change pressure:2chn:1
+2022-05-13 15:34:12  INFO -previous step change pressure:2chn:3
+2022-05-13 15:34:12  INFO -previous step change pressure:2chn:4
+2022-05-13 15:34:12  INFO -previous step change pressure:2chn:5
+2022-05-13 15:34:12  INFO -previous step change pressure:2chn:6
+2022-05-13 15:34:12  INFO -previous step change pressure:2chn:7
+2022-05-13 15:34:12  INFO -previous step change pressure:2chn:8
+2022-05-13 15:34:12  INFO -syncChannels size = 7
+2022-05-13 15:34:18  INFO -resume all sync channels:7
+2022-05-13 15:34:23  INFO -previous step change pressure:2chn:1
+2022-05-13 15:34:23  INFO -previous step change pressure:2chn:3
+2022-05-13 15:34:23  INFO -previous step change pressure:2chn:4
+2022-05-13 15:34:23  INFO -previous step change pressure:2chn:5
+2022-05-13 15:34:23  INFO -previous step change pressure:2chn:6
+2022-05-13 15:34:23  INFO -previous step change pressure:2chn:7
+2022-05-13 15:34:23  INFO -previous step change pressure:2chn:8
+2022-05-13 15:34:23  INFO -syncChannels size = 7
+2022-05-13 15:34:29  INFO -resume all sync channels:7
+2022-05-13 15:34:33  INFO -previous step change pressure:2chn:1
+2022-05-13 15:34:33  INFO -previous step change pressure:2chn:3
+2022-05-13 15:34:33  INFO -previous step change pressure:2chn:4
+2022-05-13 15:34:33  INFO -previous step change pressure:2chn:5
+2022-05-13 15:34:33  INFO -previous step change pressure:2chn:6
+2022-05-13 15:34:33  INFO -previous step change pressure:2chn:7
+2022-05-13 15:34:33  INFO -previous step change pressure:2chn:8
+2022-05-13 15:34:33  INFO -syncChannels size = 7
+2022-05-13 15:34:39  INFO -resume all sync channels:7
+2022-05-13 15:34:43  INFO -previous step change pressure:2chn:1
+2022-05-13 15:34:43  INFO -previous step change pressure:2chn:3
+2022-05-13 15:34:43  INFO -previous step change pressure:2chn:4
+2022-05-13 15:34:43  INFO -previous step change pressure:2chn:5
+2022-05-13 15:34:43  INFO -previous step change pressure:2chn:6
+2022-05-13 15:34:43  INFO -previous step change pressure:2chn:7
+2022-05-13 15:34:43  INFO -previous step change pressure:2chn:8
+2022-05-13 15:34:43  INFO -syncChannels size = 7
+2022-05-13 15:37:55  INFO -previous step change pressure:2chn:1
+2022-05-13 15:37:55  INFO -previous step change pressure:2chn:3
+2022-05-13 15:37:55  INFO -previous step change pressure:2chn:4
+2022-05-13 15:37:55  INFO -previous step change pressure:2chn:5
+2022-05-13 15:37:55  INFO -previous step change pressure:2chn:6
+2022-05-13 15:37:55  INFO -previous step change pressure:2chn:7
+2022-05-13 15:37:55  INFO -previous step change pressure:2chn:8
+2022-05-13 15:37:55  INFO -syncChannels size = 7
+2022-05-13 15:38:00  INFO -resume all sync channels:7
+2022-05-13 15:41:34  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:41:36  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:41:38  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:41:48  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:41:50  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-13 15:41:52  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-14 14:31:17  INFO -previous step change pressure:2chn:1
+2022-05-14 14:31:17  INFO -previous step change pressure:2chn:3
+2022-05-14 14:31:17  INFO -previous step change pressure:2chn:4
+2022-05-14 14:31:17  INFO -previous step change pressure:2chn:5
+2022-05-14 14:31:17  INFO -previous step change pressure:2chn:6
+2022-05-14 14:31:17  INFO -previous step change pressure:2chn:7
+2022-05-14 14:31:17  INFO -previous step change pressure:2chn:8
+2022-05-14 14:31:17  INFO -syncChannels size = 7
+2022-05-14 14:31:45  INFO -resume all sync channels:7
+2022-05-16 09:12:21  INFO -previous step change pressure:2chn:1
+2022-05-16 09:12:21  INFO -previous step change pressure:2chn:3
+2022-05-16 09:12:21  INFO -previous step change pressure:2chn:4
+2022-05-16 09:12:21  INFO -previous step change pressure:2chn:5
+2022-05-16 09:12:21  INFO -previous step change pressure:2chn:6
+2022-05-16 09:12:21  INFO -previous step change pressure:2chn:7
+2022-05-16 09:12:21  INFO -previous step change pressure:2chn:8
+2022-05-16 09:12:21  INFO -syncChannels size = 7
+2022-05-16 09:16:00  INFO -previous step change pressure:2chn:1
+2022-05-16 09:16:00  INFO -previous step change pressure:2chn:3
+2022-05-16 09:16:00  INFO -previous step change pressure:2chn:4
+2022-05-16 09:16:00  INFO -previous step change pressure:2chn:5
+2022-05-16 09:16:00  INFO -previous step change pressure:2chn:6
+2022-05-16 09:16:00  INFO -previous step change pressure:2chn:7
+2022-05-16 09:16:00  INFO -previous step change pressure:2chn:8
+2022-05-16 09:16:00  INFO -syncChannels size = 7
+2022-05-16 09:37:19  INFO -previous step change pressure:2chn:1
+2022-05-16 09:37:19  INFO -previous step change pressure:2chn:3
+2022-05-16 09:37:19  INFO -previous step change pressure:2chn:4
+2022-05-16 09:37:19  INFO -previous step change pressure:2chn:5
+2022-05-16 09:37:19  INFO -previous step change pressure:2chn:6
+2022-05-16 09:37:19  INFO -previous step change pressure:2chn:7
+2022-05-16 09:37:19  INFO -previous step change pressure:2chn:8
+2022-05-16 09:37:19  INFO -syncChannels size = 7
+2022-05-16 09:39:42  INFO -resume all sync channels:7
+2022-05-16 09:39:52  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-16 09:39:54  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-16 09:39:56  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-16 09:39:58  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-05-16 09:40:00  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-06-14 14:34:37  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:34:39  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:34:41  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:34:43  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:36:49  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:36:51  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:36:53  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:36:55  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:36:57  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:36:59  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:01  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:03  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:05  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:07  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:09  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:11  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:13  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:15  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:17  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:19  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:21  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:23  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:25  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:27  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:29  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:31  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:33  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:35  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:37  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:39  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:41  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:43  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-14 14:37:45  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:00  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:02  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:04  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:06  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:08  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:10  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:30  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:32  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:34  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:36  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:38  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-06-23 22:22:40  INFO -paused channel size = 62,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:08  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:10  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:12  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:14  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:16  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:18  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:20  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:22  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:24  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:26  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:28  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:57:30  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:14  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:16  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:18  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:20  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:22  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:24  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:26  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:28  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:30  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:32  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:34  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:36  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:38  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:40  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:42  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:44  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:46  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:48  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:50  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:52  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:54  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:56  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:58:58  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:00  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:02  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:04  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:06  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:08  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:10  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:12  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:14  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:16  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:18  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:20  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:22  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:24  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:26  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:28  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:30  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:32  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:34  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:36  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:38  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:40  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:42  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:44  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:46  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:48  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:50  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:52  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:54  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:56  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 10:59:58  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:00  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:02  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:04  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:06  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:08  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:10  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:12  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:14  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:16  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:18  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:20  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:22  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:24  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:26  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:28  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:30  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:32  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:00:34  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:17  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:19  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:21  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:23  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:25  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:27  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:29  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:31  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:35  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:37  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:39  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-04 11:04:41  INFO -paused channel size = 63,synced channel size = 0,can not resume synced channels
+2022-07-13 13:47:42  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 13:47:44  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 13:47:46  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:38  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:40  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:42  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:44  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:46  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:48  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:50  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:52  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:54  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:56  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:01:58  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:00  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:02  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:04  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:06  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:22  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:24  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:26  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:28  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:30  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:32  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:34  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-07-13 14:02:36  INFO -paused channel size = 7,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:33  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:35  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:37  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:39  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:41  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:43  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:45  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:47  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:49  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:51  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:53  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:55  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:57  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:55:59  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:56:01  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:56:03  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:56:05  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:56:07  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:56:09  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:56:11  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 16:56:13  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:19  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:21  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:23  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:25  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:27  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:29  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:31  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:33  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:35  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:37  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:39  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:41  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:43  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:45  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:47  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:49  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:51  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:53  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:55  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:57  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:09:59  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:01  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:03  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:05  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:07  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:09  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:11  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:13  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:15  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:17  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:19  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:21  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:23  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:25  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:27  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:29  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:31  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:33  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:35  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:37  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:39  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:41  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:43  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:45  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:47  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:49  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:51  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:53  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:55  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:57  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:10:59  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:01  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:03  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:05  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:07  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:09  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:11  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:13  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:15  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:17  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:19  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:21  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:23  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:25  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:27  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:29  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:31  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:33  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:35  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:37  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:39  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels
+2022-07-13 17:11:41  INFO -paused channel size = 8,synced channel size = 0,can not resume synced channels

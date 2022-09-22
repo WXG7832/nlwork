@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nlteck.model.mapper.CalDataMapper">
+
+	<select id="select" resultType="CalData" parameterType="map">
+		select * from caldata_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="testId != null">and test_id = #{testId}</if>
+			<if test="logicIndex != null">and logic_index = #{logicIndex}</if>
+			<if test="driverIndex != null">and driver_index = #{driverIndex}</if>
+			<if test="channelIndex != null">and channel_index = #{channelIndex}</if>
+		</where>
+	</select>
+
+	<insert id="insert" parameterType="CalData" keyProperty="id"
+		useGeneratedKeys="true">
+		insert into caldata_table
+		(
+		id,
+		test_id,
+		logic_index,
+		driver_index,
+		channel_index,
+		calibrate_index,
+		state,
+		mode,
+		pole,
+		level,
+		step,
+		total_step,
+		cal_dot,
+		adc,
+		meter,
+		elapse_seconds,
+		date
+		)
+		values
+		(
+		#{id},
+		#{testId},
+		#{logicIndex},
+		#{driverIndex},
+		#{channelIndex},
+		#{calibrateIndex},
+		#{state},
+		#{mode},
+		#{pole},
+		#{level},
+		#{step},
+		#{totalStep},
+		#{calDot},
+		#{adc},
+		#{meter},
+		#{elapseSeconds},
+		#{date}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="map">
+		delete from caldata_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="testId != null">and test_id = #{testId}</if>
+			<if test="logicIndex != null">and logic_index = #{logicIndex}</if>
+			<if test="driverIndex != null">and driver_index = #{driverIndex}</if>
+			<if test="channelIndex != null">and channel_index = #{channelIndex}</if>
+		</where>
+	</delete>
+
+</mapper>

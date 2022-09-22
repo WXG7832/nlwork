@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<steadyCfg sampleCount="30" maxSigma="2.0" trailCount="20" adcReadCount="30" adcRetryDelay="500" adcReadCountCV="30" adcRetryDelayCV="500"/>

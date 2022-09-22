@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nlteck.model.mapper.ProcedureMapper">
+   
+   <sql id="procedureSection">
+        p.id         as     p_id,
+        p.name       as     p_name,
+        p.optDate    as     p_optdate
+   </sql>
+   
+   <select id="select" parameterType="map" resultMap="procedureResult" >
+       
+       select <include refid="procedureSection"></include>,
+       <include refid="com.nlteck.model.mapper.PlanDotMapper.planDotSection"></include> 
+       from procedure_table p left join plandot_table pd on p.id = pd.procedure_id
+       <where>
+          <if test="id != null">p.id = #{p.id}</if>
+          <if test="name != null">p.name = #{p.name}</if>
+       </where>
+   
+   </select>
+   
+   <resultMap type="Procedure" id="procedureResult">
+       <id   property="id"  column="p_id"/>
+       <result property="name" column="p_name"/>
+       <result property="optDate" column="p_optdate"/>
+       <collection property="planDots" ofType="PlanDot">
+          <id property="id"  column="pd_id"/>
+          <result property="calculateDot"  column="pd_calculatedot"/>
+          <result property="calMode" column="pd_calmode"/>
+          <result property="calPole" column="pd_calpole"/>
+          <result property="calResolution" column="pd_calresolution"/>
+       </collection>
+   
+   </resultMap>
+   
+   <update id="update" parameterType="map">
+      update procedure_table 
+      <set>
+         <if test="name != null">,name = #{name}</if>
+         <if test="optDate != null">,optDate = #{optDate}</if>
+      </set>
+      where id = #{id}
+   </update>
+   
+   <insert id="insert" parameterType="Procedure" keyProperty="id" useGeneratedKeys="true">
+       insert into procedure_table(name,optDate) values(#{name},#{optDate})
+   </insert>
+   
+   <delete id="delete" parameterType="map">
+      delete from procedure_table
+      <where>
+        <if test="id != null">and id = #{id}</if>
+        <if test="name != null">and name = #{name}</if>
+      </where>
+   </delete>
+
+</mapper>

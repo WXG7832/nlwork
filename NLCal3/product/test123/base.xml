@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 校准主控基本配置文件 -->
+<!-- debug 调试模式-->
+<root debug="true"> 
+  <!-- base 基本设置 -->  
+  <!-- calibrateTerminal：校准终端 PC/Screen -->  
+  <!-- ignoreCV2 忽略CV2的偏差 -->  
+  <!-- calCV2 开启CV2校准 -->  
+  <!-- stopMode 停止模式 0 报错后关闭通道 1：不关闭，停在报错的状态 -->  
+  <!-- calCheckBoard 开启回检板校准 -->  
+  <!-- calCheckOnly 只校准回检板，不写逻辑板flash -->  
+  <!-- equipType 设备类型 PowerCab 电源柜 Capacity 恒温箱 -->  
+  <!-- useRecal: true表示复测，当校准点不过时进行复测一次；默认false,即不进行复测 -->  
+  <!-- measureNeedClose: true每个计量点都需要重新关闭启用使能   false每个计量点无需关闭使能 -->  
+  <base ignoreCV2="true" calCV2="false" stopMode="0" calCheckBoard="true" calCheckOnly="false" equipType="PowerCab" useRecal="false" measureNeedClose="true" driverChnCount="6"/>  
+  <!-- protocol 协议配置-->  
+  <!-- print 开启控制台打印协议 -->  
+  <!-- chnOrderResverse 开启通道反序 -->  
+  <!-- resistanceResolution 协议校准板电阻系数小数位 -->  
+  <!-- voltageResolution 协议电压小数位 -->  
+  <!-- currentResolution 协议电流和adc小数位  -->  
+  <!-- programKResolution 协议程控K小数位 -->  
+  <!-- programBResolution 协议程控B小数位 -->  
+  <!-- adcKResolution 协议adcK小数位 -->  
+  <!-- adcBResolution 协议adcB小数位 -->  
+  <protocol print="true" chnOrderResverse="false" resistanceResolution="7" voltageResolution="1" currentResolution="2" programKResolution="7" programBResolution="7" adcKResolution="7" adcBResolution="7" moduleCount="2"/>  
+  <!-- i18n 国际化配置 -->  
+  <!-- language 语言 zh-CN 中文 -->  
+  <!-- charsetName i18n文件编码 -->  
+  <i18n language="zh-CN" charsetName="GBK"/>  
+  <!-- virtual 虚拟机配置 -->  
+  <!-- 生产use="false" -->  
+  <virtual use="true" logicDriverCount="4" driverChnCount="2"> 
+    <driverboards> 
+      <driverboard index="0" disabled="false"/>  
+      <driverboard index="1" disabled="false"/>  
+      <driverboard index="2" disabled="false"/>  
+      <driverboard index="3" disabled="false"/>  
+      <driverboard index="4" disabled="true"/>  
+      <driverboard index="5" disabled="true"/>  
+      <driverboard index="6" disabled="true"/>  
+      <driverboard index="7" disabled="true"/> 
+    </driverboards> 
+  </virtual>  
+  <!-- ports 主控板串口参数-->  
+  <ports>
+    <port index="0" name="/dev/ttyS0" baudrate="38400" disabled="false"/>
+    <port index="1" name="/dev/ttyS1" baudrate="38400" disabled="false"/>
+    <port index="2" name="/dev/ttyS2" baudrate="38400" disabled="false"/>
+    <port index="3" name="/dev/ttyS3" baudrate="38400" disabled="false"/>
+    <port index="4" name="/dev/ttyS4" baudrate="38400" disabled="false"/>
+    <port index="5" name="/dev/ttyS5" baudrate="38400" disabled="false"/>
+    <port index="6" name="/dev/ttyS6" baudrate="38400" disabled="false"/>
+    <port index="7" name="/dev/ttyS7" baudrate="38400" disabled="false"/>
+  </ports>  
+  <!-- networks 网络参数-->  
+  <networks>
+    <network index="0" ip="127.0.0.1" port="8163" disabled="false" async="true"/>
+    <network index="1" ip="192.168.1.103" port="8151" disabled="false" async="true"/>
+    <network index="2" ip="192.168.1.101" port="8151" disabled="false" async="true"/>
+    <network index="3" ip="192.168.1.1" port="0" disabled="false" async="true"/>
+    <network index="4" ip="192.168.1.1" port="0" disabled="false" async="true"/>
+    <network index="5" ip="192.168.1.1" port="0" disabled="false" async="true"/>
+    <network index="6" ip="192.168.1.1" port="0" disabled="false" async="true"/>
+    <network index="7" ip="192.168.1.1" port="0" disabled="false" async="true"/>
+    <network index="8" ip="192.168.1.1" port="0" disabled="false" async="true"/>
+    <network index="9" ip="192.168.1.1" port="0" disabled="false" async="true"/>
+  </networks>  
+  <!-- commType 传输类型 NETWORK 网口 SERIAL 串口-->  
+  <!-- commIndex 对应串口参数/网口参数的 index-->  
+  <device commType="NETWORK" commIndex="0"/>  
+  <!-- calboards 校准板配置-->  
+  <!-- calChnCount 校准板通道数，需要和驱动板一致 -->  
+  <!-- downFirstDotOnly 只下发每个模式量程的第一个点 -->  
+  <calboards calChnCount="1" downFirstDotOnly="false">
+    <calboard index="0" commType="SERIAL" commIndex="0" meterIndex="0" disabled="false"/>
+    <calboard index="1" commType="SERIAL" commIndex="1" meterIndex="0" disabled="true"/>
+    <calboard index="2" commType="SERIAL" commIndex="0" meterIndex="0" disabled="false"/>
+    <calboard index="3" commType="SERIAL" commIndex="0" meterIndex="0" disabled="false"/>
+    <calboard index="4" commType="SERIAL" commIndex="0" meterIndex="0" disabled="false"/>
+    <calboard index="5" commType="SERIAL" commIndex="0" meterIndex="0" disabled="false"/>
+    <calboard index="6" commType="SERIAL" commIndex="0" meterIndex="0" disabled="false"/>
+    <calboard index="7" commType="SERIAL" commIndex="0" meterIndex="0" disabled="false"/>
+    <calboard index="8" commType="SERIAL" commIndex="0" meterIndex="0" disabled="false"/>
+  </calboards>  
+  <!-- meters 万用表配置-->  
+  <meters>
+    <meter index="0" commType="NETWORK" commIndex="1" disabled="false"/>
+    <meter index="1" commType="NETWORK" commIndex="2" disabled="true"/>
+    <meter index="2" commType="NETWORK" commIndex="0" disabled="false"/>
+    <meter index="3" commType="NETWORK" commIndex="0" disabled="false"/>
+    <meter index="4" commType="NETWORK" commIndex="0" disabled="false"/>
+    <meter index="5" commType="NETWORK" commIndex="0" disabled="false"/>
+    <meter index="6" commType="NETWORK" commIndex="0" disabled="false"/>
+    <meter index="7" commType="NETWORK" commIndex="0" disabled="false"/>
+  </meters>  
+  <!-- screen 液晶屏-->  
+  <!-- index 序号-->  
+  <!-- commType 传输类型 NETWORK 网口 SERIAL 串口-->  
+  <!-- commIndex 对应串口参数/网口参数的 index-->  
+  <!-- disabled 是否关闭，true为关闭 -->  
+  <screen index="1" commType="NETWORK" commIndex="3" disabled="true"/>  
+  <!-- match 对接 -->  
+  <!-- time 对接次数 -->  
+  <!-- matchDelay 校准板下发后读取逻辑板的延时 -->  
+  <!-- staticMaxVolt 最大静态电压，超过该值表示虚压，0表示不检测 -->  
+  <!-- voltOffset 校准板下发基准和逻辑板基准的差值在范围内时，表示成功 -->  
+  <match time="2" matchDelay="1000" staticMaxVolt="0" voltOffset="200"> 
+    <!-- calboard 校准板-->  
+    <!-- index 序号-->  
+    <calboard index="0"> 
+      <!-- matchVolt 校准板下发基准，dot个数与对接次数对应-->  
+      <dot matchVolt="500"/>  
+      <dot matchVolt="1000"/> 
+    </calboard>  
+    <calboard index="1"> 
+      <dot matchVolt="1000"/>  
+      <dot matchVolt="1500"/> 
+    </calboard>  
+    <calboard index="2"> 
+      <dot matchVolt="1500"/>  
+      <dot matchVolt="2000"/> 
+    </calboard>  
+    <calboard index="3"> 
+      <dot matchVolt="2000"/>  
+      <dot matchVolt="2500"/> 
+    </calboard> 
+  </match>  
+  <!-- adcAdjust 计量时万用表在偏差内的情况下，调整最终adc，由工程师配置 -->  
+  <adcAdjust use="true">
+    <adjust mode="CC" pole="POSITIVE" level="0" threshold="0.3" div="1.0"/>
+    <adjust mode="CC" pole="POSITIVE" level="1" threshold="0.3" div="1.0"/>
+    <adjust mode="DC" pole="POSITIVE" level="0" threshold="0.3" div="1.0"/>
+    <adjust mode="DC" pole="POSITIVE" level="1" threshold="0.3" div="1.0"/>
+    <adjust mode="CV" pole="POSITIVE" level="0" threshold="0.3" div="1.0"/>
+    <adjustCheck mode="CV" pole="POSITIVE" level="0" threshold="0.3" div="1.0"/>
+    <adjust mode="CC" pole="NEGTIVE" level="0" threshold="0.3" div="1.0"/>
+    <adjust mode="CC" pole="NEGTIVE" level="1" threshold="0.3" div="1.0"/>
+    <adjust mode="DC" pole="NEGTIVE" level="0" threshold="0.3" div="1.0"/>
+    <adjust mode="DC" pole="NEGTIVE" level="1" threshold="0.3" div="1.0"/>
+    <adjust mode="CV" pole="NEGTIVE" level="0" threshold="0.3" div="1.0"/>
+    <adjustCheck mode="CV" pole="NEGTIVE" level="0" threshold="0.3" div="1.0"/>
+    <adjustCheck mode="CC" pole="POSITIVE" level="0" threshold="0.0" div="0.0"/>
+    <adjustCheck mode="CC" pole="POSITIVE" level="0" threshold="0.0" div="0.0"/>
+    <adjustCheck mode="CC" pole="POSITIVE" level="0" threshold="0.0" div="0.0"/>
+  </adcAdjust>  
+  <!-- 新增计量点范围偏差判定，如未加入此配置，则使用老的RangeCurrentPrecisionData中的范围做判定 -->  
+  <calculateValidates>
+    <validate min="20.0" max="60000.0" adcOffset="5.0" meterOffset="5.0"/>
+    <validate min="0.0" max="0.0" adcOffset="0.0" meterOffset="0.0"/>
+    <validate min="0.0" max="0.0" adcOffset="0.0" meterOffset="0.0"/>
+    <validate min="0.0" max="0.0" adcOffset="0.0" meterOffset="0.0"/>
+    <validate min="0.0" max="0.0" adcOffset="0.0" meterOffset="0.0"/>
+    <validate min="0.0" max="0.0" adcOffset="0.0" meterOffset="0.0"/>
+  </calculateValidates>  
+  <!-- 计量失败后重新调整KB重新计量配置 -->  
+  <kbAdjust enable="true" count="1"/>  
+  <calculateValidate> 
+    <validate min="20.0" max="60000.0" adcOffset="5.0" meterOffset="5.0"/>  
+    <validate min="0.0" max="0.0" adcOffset="0.0" meterOffset="0.0"/>  
+    <validate min="0.0" max="0.0" adcOffset="0.0" meterOffset="0.0"/> 
+  </calculateValidate> 
+</root>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.nlteck.model.mapper.CheckBoardMapper">
+	<select id="select" resultType="CheckBoard" parameterType="map">
+        select * from checkboard_table 
+        <where>
+         <if test="id != null">and id = #{id}</if>
+         <if test="open != null">and open = #{open}</if>
+         <if test="barcode != null">and barcode = #{barcode}</if>
+      </where> 
+    </select>
+    
+    <insert id="insert" parameterType="CheckBoard" keyProperty="id" useGeneratedKeys="true">
+        insert into checkboard_table(checkindex,open,barcode) values(#{checkIndex},#{open},#{barcode})
+    </insert>
+    
+    <delete id="delete" parameterType="map">
+       delete from checkboard_table  
+       <where>
+         <if test="id != null">and id = #{id}</if>
+         <if test="barcode != null">and barcode = #{barcode}</if>
+       </where>
+    
+    </delete>
+    
+    <update id="update" parameterType="map">
+       update checkboard_table  
+       <set>
+          <if test="open != null">open=#{open},</if>
+          <if test="barcode != null">barcode=#{barcode}</if>          
+       </set>
+       where id = #{id}
+    </update>
+</mapper>

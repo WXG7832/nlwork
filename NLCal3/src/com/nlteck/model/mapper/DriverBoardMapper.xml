@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.nlteck.model.mapper.DriverBoardMapper">
+
+    <sql id="driverSection">
+        driver.id       as    driver_id,
+        driver.driverIndex    as    driver_index, 
+        driver.open      as    driver_open,
+        driver.barcode  as    driver_barcode
+       
+    </sql>
+
+	<select id="select" resultType="DriverBoard" parameterType="map">
+        select * from driverboard_table 
+        <where>
+         <if test="logicboard_id != null">and logicboard_id = #{logicBoard.id}</if>
+         <if test="id != null">and id = #{id}</if>
+         <if test="open != null">and open = #{open}</if>
+         <if test="barcode != null">and barcode = #{barcode}</if>
+      </where> 
+    </select>
+    
+    <insert id="insert" parameterType="DriverBoard" keyProperty="id" useGeneratedKeys="true">
+       insert driverboard_table(driverindex,barcode,logicboard_id,open) values(#{driverIndex},#{barcode},#{logicBoard.id},#{open})
+    </insert>
+    
+    <delete id="delete" parameterType="map">
+       delete from driverboard_table  
+       <where>
+         <if test="id != null">and id = #{id}</if>
+         <if test="barcode != null">and barcode = #{barcode}</if>
+       </where>
+    
+    </delete>
+    
+    <update id="update" parameterType="map">
+       update driverboard_table  
+       <set>
+          <if test="open != null">open=#{open},</if>
+          <if test="barcode != null">barcode=#{barcode}</if>          
+       </set>
+       where id = #{id}
+    </update>
+    
+    <resultMap type="DriverBoard" id="driverResult">
+       <id  property="id"  column="driver_id"/>
+       <result property="driverIndex" column="driver_index"/>
+       <result property="open" column="driver_open"/>
+       <result property="barcode" column="driver_barcode"/>
+       <collection property="channels" ofType="Channel" resultMap="com.nlteck.model.mapper.ChannelMapper.channelResult"/>
+      
+    </resultMap>
+</mapper>

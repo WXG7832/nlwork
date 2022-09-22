@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/task
+		http://www.springframework.org/schema/task/spring-task.xsd">
+	<context:annotation-config />
+	<context:component-scan
+		base-package="com.nlteck.service" />
+	<tx:annotation-driven
+		transaction-manager="transactionManager" />
+
+	<!-- 引入jdbc配置文件 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath*:cal.jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${driverClass}" />
+		<property name="url" value="${url}" />
+		<property name="username" value="${username}" />
+		<property name="password" value="${password}" />
+
+	</bean>
+
+	<!-- 查询数据 -->
+	<bean id="sessionFactory"
+		class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis.xml" />
+	</bean>
+	<bean id="sqlSession"
+		class="org.mybatis.spring.SqlSessionTemplate" scope="prototype">
+		<constructor-arg index="0" ref="sessionFactory" />
+	</bean>
+
+	<!-- 事物管理对象 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- AOP对象 -->
+
+	<!-- 核心业务组件 -->
+
+	<bean id="databaseManager"
+		class="com.nlteck.service.DatabaseManager">
+		<property name="calDataDao" ref="calDataDao"></property>
+		<property name="testDataDao" ref="testDataDao"></property>
+		<property name="testDotDao" ref="testDotDao"></property>
+		<property name="testLogDao" ref="testLogDao"></property>
+	</bean>
+
+	<!-- DAO组件 -->
+	<bean id="calDataDao" class="com.nlteck.service.dao.CalDataDao">
+		<property name="sqlSessionTemplate" ref="sqlSession"></property>
+	</bean>
+	<bean id="testDataDao" class="com.nlteck.service.dao.TestDataDao">
+		<property name="sqlSessionTemplate" ref="sqlSession"></property>
+	</bean>
+	<bean id="testDotDao" class="com.nlteck.service.dao.TestDotDao">
+		<property name="sqlSessionTemplate" ref="sqlSession"></property>
+	</bean>
+	<bean id="testLogDao" class="com.nlteck.service.dao.TestLogDao">
+		<property name="sqlSessionTemplate" ref="sqlSession"></property>
+	</bean>
+
+
+	<!-- AOP切面配置 -->
+	<aop:config proxy-target-class="true">
+		<aop:pointcut
+			expression="execution(public * com.nlteck.service.*.*(..))"
+			id="transactionPoint" />
+
+
+		<aop:advisor advice-ref="txAdvice"
+			pointcut-ref="transactionPoint" order="2" />
+
+
+	</aop:config>
+
+
+	<tx:advice id="txAdvice"
+		transaction-manager="transactionManager">
+		<tx:attributes>
+
+			<tx:method name="list*" read-only="true"
+				propagation="SUPPORTS" rollback-for="java.lang.Exception" />
+			<tx:method name="get*" read-only="true"
+				propagation="SUPPORTS" rollback-for="java.lang.Exception" />
+			<tx:method name="load*" read-only="true"
+				propagation="SUPPORTS" rollback-for="java.lang.Exception" />
+			<tx:method name="find*" read-only="true"
+				propagation="SUPPORTS" rollback-for="java.lang.Exception" />
+			<tx:method name="query*" read-only="true"
+				propagation="SUPPORTS" rollback-for="java.lang.Exception" />
+			<tx:method name="serialize*"
+				rollback-for="java.lang.Exception" isolation="SERIALIZABLE" />
+			<tx:method name="*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception" />
+		</tx:attributes>
+
+	</tx:advice>
+
+</beans>

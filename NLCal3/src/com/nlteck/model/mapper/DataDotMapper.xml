@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nlteck.model.mapper.DataDotMapper">
+	<sql id="dataDotSection">
+		d.id as d_id,
+		d.programVal as d_programVal,
+		d.calType as d_calType,
+		d.calMode as d_calMode,
+		d.calPole as d_calPole,
+		d.calResolution as d_calResolution,
+		d.testState as d_testState,
+		d.meterVal as d_meterVal,
+		d.primitiveAdc as d_primitiveAdc,
+		d.finalAdc as d_finalAdc,
+		d.theoryAdc as d_theoryAdc,
+		d.theoryProgramK as d_theoryProgramK,
+		d.theoryProgramB as d_theoryProgramB,
+		d.theoryAdcK as d_theoryAdcK,
+		d.theoryAdcB as d_theoryAdcB,
+		d.programK as d_programK,
+		d.programB as d_programB,
+		d.adcK as d_adcK,
+		d.adcB as d_adcB,
+		d.adcK_check as d_adcK_check,
+		d.adcB_check as d_adcB_check,
+		d.miliSeconds as d_miliSeconds,
+		d.boardIndex as d_boardIndex,
+		d.chnIndexInDevice as d_chnIndexInDevice,
+		d.info as d_info
+	</sql>
+
+	<select id="select" resultType="DataDot" parameterType="map">
+		select * from dot_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="channel_id != null">and channel_id = #{channel_id}</if>
+			<if test="calType != null">and calType = #{calType}</if>
+		</where>
+	</select>
+
+	<insert id="insert" parameterType="DataDot" keyProperty="id"
+		useGeneratedKeys="true">
+		insert into
+		dot_table(id,programVal,calType,calMode,calPole,calResolution,testState,meterVal,primitiveAdc,finalAdc,theoryAdc,theoryProgramK,
+		theoryProgramB,theoryAdcK,theoryAdcB,programK,programB,adcK,adcB,adcK_check,adcB_check,miliSeconds,chnIndexInDevice,boardIndex,info,channel_id)
+		values(#{id},#{programVal},#{calType},#{calMode},#{calPole},#{calResolution},#{testState},#{meterVal},#{primitiveAdc},#{finalAdc},#{theoryAdc},#{theoryProgramK},
+		#{theoryProgramB},#{theoryAdcK},#{theoryAdcB},#{programK},#{programB},#{adcK},#{adcB},#{adcK_check},#{adcB_check},#{miliSeconds},#{chnIndexInDevice},#{boardIndex},#{info},#{channel.id})
+	</insert>
+
+	<delete id="delete" parameterType="map">
+		delete from dot_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="channel_id != null">and channel_id = #{channel_id}</if>
+			<if test="calType != null">and calType = #{calType}</if>
+		</where>
+	</delete>
+
+
+	<update id="update" parameterType="map">
+		update dot_table
+		<set>
+			<if test="programVal != null">programVal = #{programVal},</if>
+			<if test="calType != null">calType = #{calType},</if>
+			<if test="calMode != null">calMode = #{calMode},</if>
+			<if test="calPole != null">calPole = #{calPole},</if>
+			<if test="calResolution != null">calResolution = #{calResolution},</if>
+			<if test="testState != null">testState = #{testState},</if>
+			<if test="meterVal != null">meterVal = #{meterVal},</if>
+			<if test="primitiveAdc != null">primitiveAdc = #{primitiveAdc},</if>
+			<if test="finalAdc != null">finalAdc = #{finalAdc},</if>
+			<if test="theoryAdc != null">theoryAdc = #{theoryAdc},</if>
+			<if test="theoryProgramK != null">theoryProgramK = #{theoryProgramK},</if>
+			<if test="theoryProgramB != null">theoryProgramB = #{theoryProgramB},</if>
+			<if test="theoryAdcK != null">theoryAdcK = #{theoryAdcK},</if>
+			<if test="theoryAdcB != null">theoryAdcB = #{theoryAdcB},</if>
+			<if test="programK != null">programK = #{programK},</if>
+			<if test="programB != null">programB = #{programB},</if>
+			<if test="adcK != null">adcK = #{adcK},</if>
+			<if test="adcB != null">adcB = #{adcB},</if>
+			<if test="adcK != null">adcK_check = #{adcK_check},</if>
+			<if test="adcB != null">adcB_check = #{adcB_check},</if>
+			<if test="miliSeconds != null">miliSeconds = #{miliSeconds},</if>
+			<if test="logicIndex != null">logicIndex = #{logicIndex},</if>
+			<if test="driverIndex != null">driverIndex = #{driverIndex},</if>
+			<if test="chnIndexInDriver != null">chnIndexInDriver = #{chnIndexInDriver},</if>
+			<if test="chnCountInDriver != null">chnCountInDriver = #{chnCountInDriver},</if>
+			<if test="boardIndex != null">boardIndex = #{boardIndex},</if>
+			<if test="info != null">info = #{info}</if>
+		</set>
+		where id = #{id}
+	</update>
+	<resultMap type="DataDot" id="dataDotResult">
+		<id property="id" column="d_id" />
+		<id property="programVal" column="d_programVal" />
+		<id property="calType" column="d_calType" />
+		<id property="calMode" column="d_calMode" />
+		<id property="calPole" column="d_calPole" />
+		<id property="calResolution" column="d_calResolution" />
+		<id property="testState" column="d_testState" />
+		<id property="meterVal" column="d_meterVal" />
+		<id property="primitiveAdc" column="d_primitiveAdc" />
+		<id property="finalAdc" column="d_finalAdc" />
+		<id property="theoryAdc" column="d_theoryAdc" />
+		<id property="theoryProgramK" column="d_theoryProgramK" />
+		<id property="theoryProgramB" column="d_theoryProgramB" />
+		<id property="theoryAdcK" column="d_theoryAdcK" />
+		<id property="theoryAdcB" column="d_theoryAdcB" />
+		<id property="programK" column="d_programK" />
+		<id property="programB" column="d_programB" />
+		<id property="adcK" column="d_adcK" />
+		<id property="adcB" column="d_adcB" />
+		<id property="adcK_check" column="d_adcK_check" />
+		<id property="adcB_check" column="d_adcB_check" />
+		<id property="miliSeconds" column="d_miliSeconds" />
+		<id property="info" column="d_info" />
+	</resultMap>
+</mapper>

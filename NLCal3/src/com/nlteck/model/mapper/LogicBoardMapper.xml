@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.nlteck.model.mapper.LogicBoardMapper">
+   
+   <sql id="logicSection">
+        logic.id      as  logic_id ,
+        logic.logicIndex   as  logic_index,
+        logic.open     as  logic_open
+   </sql>
+
+   <select id="select" resultType="LogicBoard" parameterType="map">
+        select * from logicboard_table 
+        <where>
+         <if test="id != null">and id = #{id}</if>
+         <if test="barcode != null">and barcode = #{barcode}</if>
+         <if test="mainboard_id != null">and mainboard_id = #{mainboard.id}</if>
+      </where> 
+    </select>
+    
+    <insert id="insert" parameterType="LogicBoard" keyProperty="id" useGeneratedKeys="true">
+       insert into logicboard_table(logicindex,barcode,open,mainboard_id) values(#{logicIndex},#{barcode},#{open},#{mainboard.id})
+    </insert>
+    
+    <delete id="delete" parameterType="map">
+       delete from logicboard_table 
+       <where>
+         <if test="id != null">and id = #{id}</if>
+         <if test="barcode != null">and barcode = #{barcode}</if>
+       </where>
+    </delete>
+    
+    <update id="update" parameterType="map">
+       update logicboard_table 
+       <set>
+          <if test="open != null">,open=#{open}</if>
+          <if test="barcode != null">,barcode=#{barcode}</if>
+       </set>
+       where id = #{id}
+    </update>
+    
+    <resultMap type="LogicBoard" id="logicResult">
+        <id property="id" column="logic_id"/>
+        <result property="logicIndex" column="logic_index"/>
+        <result property="barcode" column="logic_barcode"/>
+        <result property="open"  column="logic_open"/>
+        <collection property="drivers" ofType="DriverBoard" resultMap="com.nlteck.model.mapper.DriverBoardMapper.driverResult"/>
+    </resultMap>
+</mapper>

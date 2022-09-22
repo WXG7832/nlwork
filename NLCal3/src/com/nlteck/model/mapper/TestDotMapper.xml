@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nlteck.model.mapper.TestDotMapper">
+
+	<select id="select" resultType="TestDot" parameterType="map">
+		select * from testdot_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="testId != null">and test_id = #{testId}</if>
+			<if test="unitIndex != null">and unit_index = #{unitIndex}</if>
+			<if test="chnIndex != null">and chn_index = #{chnIndex}</if>
+		</where>
+	</select>
+
+	<insert id="insert" parameterType="TestDot" keyProperty="id"
+		useGeneratedKeys="true">
+		insert into testdot_table
+		(
+		id,
+		test_id,
+		test_type,
+		unit_index,
+		chn_index,
+		test_mode,
+		volt_mode,
+		pole,
+		dot_precision,
+		meter_val,
+		program_val,
+		adc,
+		check_adc,
+		programk,
+		programb,
+		adck,
+		adcb,
+		check_adck,
+		check_adcb,
+		success,
+		info,
+		date
+		)
+		values
+		(
+		#{id},
+		#{testId},
+		#{testType},
+		#{unitIndex},
+		#{chnIndex},
+		#{mode},
+		#{voltMode},
+		#{pole},
+		#{precision},
+		#{meterVal},
+		#{programVal},
+		#{adc},
+		#{checkAdc},
+		#{programk},
+		#{programb},
+		#{adck},
+		#{adcb},
+		#{checkAdck},
+		#{checkAdcb},
+		#{success},
+		#{info},
+		#{date}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="map">
+		delete from testdot_table
+		<where>
+			<if test="id != null">and id = #{id}</if>
+			<if test="testId != null">and test_id = #{testId}</if>
+			<if test="unitIndex != null">and unit_index = #{unitIndex}</if>
+			<if test="chnIndex != null">and chn_index = #{chnIndex}</if>
+		</where>
+	</delete>
+
+</mapper>

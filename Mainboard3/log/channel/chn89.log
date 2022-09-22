@@ -1,0 +1,69 @@
+2022-07-25 17:44:43.504  INFO -cancel sync mode
+2022-07-25 17:44:43.909  INFO -channel opt start miliseconds = 1658742283730
+2022-07-25 17:44:43.909  INFO -attempt to STARTUP channel,attempt :0,ChnDataPack [chnIndex=8, voltage=3800.0, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=34, loopIndex=1, stepIndex=1, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 17:44:43.910  INFO -start up success,channel state = RUN
+2022-07-25 17:44:53.913  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3800.0, backupVoltage=0.0, powerVoltage=0.0, current=4000.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=2, alertCode=NORMAL, state=RUNNING, workMode=DC, important=false, alertVolt=3800.0, alertCurrent=0.0, alertTime=10028]
+2022-07-25 17:44:53.913  INFO -set lead sync count = 2
+2022-07-25 17:44:53.913  INFO -channel next step :1-2
+2022-07-25 17:44:53.913  INFO -rawData = ChnDataPack [chnIndex=8, voltage=3800.0, backupVoltage=0.0, powerVoltage=0.0, current=4000.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=2, alertCode=NORMAL, state=RUNNING, workMode=DC, important=true, alertVolt=3800.0, alertCurrent=0.0, alertTime=10028]
+2022-07-25 17:44:53.913  INFO -skip to stepIndex = 2,loopIndex = 1,total seconds=10003
+2022-07-25 17:45:08.290  INFO -stop step
+2022-07-25 17:45:08.905  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3795.6441838783253, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=0, stepIndex=0, alertCode=NORMAL, state=STOP, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 17:46:50.914  INFO -cancel sync mode
+2022-07-25 17:46:51.905  INFO -channel opt start miliseconds = 1658742411114
+2022-07-25 17:46:51.906  INFO -attempt to STARTUP channel,attempt :0,ChnDataPack [chnIndex=8, voltage=3795.6441838783253, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=635, loopIndex=1, stepIndex=1, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 17:46:51.906  INFO -start up success,channel state = RUN
+2022-07-25 17:47:01.895  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3795.6441838783253, backupVoltage=0.0, powerVoltage=0.0, current=4000.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=2, alertCode=NORMAL, state=RUNNING, workMode=DC, important=false, alertVolt=3795.6441838783253, alertCurrent=0.0, alertTime=10637]
+2022-07-25 17:47:01.896  INFO -set lead sync count = 2
+2022-07-25 17:47:01.896  INFO -channel next step :1-2
+2022-07-25 17:47:01.896  INFO -rawData = ChnDataPack [chnIndex=8, voltage=3795.6441838783253, backupVoltage=0.0, powerVoltage=0.0, current=4000.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=2, alertCode=NORMAL, state=RUNNING, workMode=DC, important=true, alertVolt=3795.6441838783253, alertCurrent=0.0, alertTime=10637]
+2022-07-25 17:47:01.896  INFO -skip to stepIndex = 2,loopIndex = 1,total seconds=9990
+2022-07-25 17:54:50.905  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3649.7323095952024, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=3, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=false, alertVolt=3649.7323095952024, alertCurrent=4000.324170922766, alertTime=468992]
+2022-07-25 17:54:50.905  INFO -set lead sync count = 2
+2022-07-25 17:54:50.905  INFO -channel next step :1-3
+2022-07-25 17:54:50.905  INFO -rawData = ChnDataPack [chnIndex=8, voltage=3649.7323095952024, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=3, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=true, alertVolt=3649.7323095952024, alertCurrent=4000.324170922766, alertTime=468992]
+2022-07-25 17:54:50.905  INFO -skip to stepIndex = 3,loopIndex = 1,total seconds=469009
+2022-07-25 17:55:01.908  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3649.7323095952024, backupVoltage=0.0, powerVoltage=0.0, current=2500.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=4, alertCode=NORMAL, state=RUNNING, workMode=CC, important=false, alertVolt=3649.7323095952024, alertCurrent=0.0, alertTime=11001]
+2022-07-25 17:55:01.908  INFO -set lead sync count = 2
+2022-07-25 17:55:01.908  INFO -channel next step :1-4
+2022-07-25 17:55:01.908  INFO -rawData = ChnDataPack [chnIndex=8, voltage=3649.7323095952024, backupVoltage=0.0, powerVoltage=0.0, current=2500.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=4, alertCode=NORMAL, state=RUNNING, workMode=CC, important=true, alertVolt=3649.7323095952024, alertCurrent=0.0, alertTime=11001]
+2022-07-25 17:55:01.908  INFO -skip to stepIndex = 4,loopIndex = 1,total seconds=11003
+2022-07-25 17:59:47.239  INFO -stop step
+2022-07-25 17:59:47.902  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3699.607296348621, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=0, stepIndex=0, alertCode=NORMAL, state=STOP, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 18:05:23.103  INFO -cancel sync mode
+2022-07-25 18:05:23.901  INFO -channel opt start miliseconds = 1658743523311
+2022-07-25 18:05:23.901  INFO -attempt to STARTUP channel,attempt :0,ChnDataPack [chnIndex=8, voltage=3699.607296348621, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=430, loopIndex=1, stepIndex=1, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 18:05:23.901  INFO -start up success,channel state = RUN
+2022-07-25 18:05:33.904  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3699.607296348621, backupVoltage=0.0, powerVoltage=0.0, current=4000.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=2, alertCode=NORMAL, state=RUNNING, workMode=DC, important=false, alertVolt=3699.607296348621, alertCurrent=0.0, alertTime=10429]
+2022-07-25 18:05:33.904  INFO -set lead sync count = 2
+2022-07-25 18:05:33.905  INFO -channel next step :1-2
+2022-07-25 18:05:33.905  INFO -rawData = ChnDataPack [chnIndex=8, voltage=3699.607296348621, backupVoltage=0.0, powerVoltage=0.0, current=4000.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=2, alertCode=NORMAL, state=RUNNING, workMode=DC, important=true, alertVolt=3699.607296348621, alertCurrent=0.0, alertTime=10429]
+2022-07-25 18:05:33.905  INFO -skip to stepIndex = 2,loopIndex = 1,total seconds=10003
+2022-07-25 18:07:36.445  INFO -stop step
+2022-07-25 18:07:36.899  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3661.652076117599, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=0, stepIndex=0, alertCode=NORMAL, state=STOP, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 18:26:56.487  INFO -cancel sync mode
+2022-07-25 18:26:56.906  INFO -channel opt start miliseconds = 1658744816701
+2022-07-25 18:26:56.906  INFO -attempt to STARTUP channel,attempt :0,ChnDataPack [chnIndex=8, voltage=3661.652076117599, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=48, loopIndex=1, stepIndex=1, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 18:26:56.906  INFO -start up success,channel state = RUN
+2022-07-25 18:27:05.898  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3661.652076117599, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=0, stepIndex=0, alertCode=NORMAL, state=STOP, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 18:27:14.618  INFO -create startup init Data
+2022-07-25 18:27:14.895  INFO -channel opt start miliseconds = 1658744834619
+2022-07-25 18:27:14.895  INFO -attempt to FORMATION channel,attempt :0,ChnDataPack [chnIndex=8, voltage=3661.652076117599, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=8114, loopIndex=1, stepIndex=1, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]
+2022-07-25 18:27:14.895  INFO -resume ok
+2022-07-25 18:27:14.895  INFO -start up success,channel state = RUN
+2022-07-25 18:27:16.901  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3661.652076117599, backupVoltage=0.0, powerVoltage=0.0, current=4000.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=2, alertCode=NORMAL, state=RUNNING, workMode=DC, important=false, alertVolt=3661.652076117599, alertCurrent=0.0, alertTime=10122]
+2022-07-25 18:27:16.901  INFO -set lead sync count = 2
+2022-07-25 18:27:16.901  INFO -channel next step :1-2
+2022-07-25 18:27:16.901  INFO -rawData = ChnDataPack [chnIndex=8, voltage=3661.652076117599, backupVoltage=0.0, powerVoltage=0.0, current=4000.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=2, alertCode=NORMAL, state=RUNNING, workMode=DC, important=true, alertVolt=3661.652076117599, alertCurrent=0.0, alertTime=10122]
+2022-07-25 18:27:16.901  INFO -skip to stepIndex = 2,loopIndex = 1,total seconds=10003
+2022-07-25 18:27:54.900  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3649.830011257809, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=3, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=false, alertVolt=3649.830011257809, alertCurrent=4000.7272328329123, alertTime=37998]
+2022-07-25 18:27:54.900  INFO -set lead sync count = 2
+2022-07-25 18:27:54.900  INFO -channel next step :1-3
+2022-07-25 18:27:54.900  INFO -rawData = ChnDataPack [chnIndex=8, voltage=3649.830011257809, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=3, alertCode=NORMAL, state=RUNNING, workMode=SLEEP, important=true, alertVolt=3649.830011257809, alertCurrent=4000.7272328329123, alertTime=37998]
+2022-07-25 18:27:54.900  INFO -skip to stepIndex = 3,loopIndex = 1,total seconds=37999
+2022-07-25 18:28:05.900  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3649.830011257809, backupVoltage=0.0, powerVoltage=0.0, current=2500.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=4, alertCode=NORMAL, state=RUNNING, workMode=CC, important=false, alertVolt=3649.830011257809, alertCurrent=0.0, alertTime=10994]
+2022-07-25 18:28:05.900  INFO -set lead sync count = 2
+2022-07-25 18:28:05.900  INFO -channel next step :1-4
+2022-07-25 18:28:05.900  INFO -rawData = ChnDataPack [chnIndex=8, voltage=3649.830011257809, backupVoltage=0.0, powerVoltage=0.0, current=2500.0, capacity=0.0, stepElapsedTime=0, loopIndex=1, stepIndex=4, alertCode=NORMAL, state=RUNNING, workMode=CC, important=true, alertVolt=3649.830011257809, alertCurrent=0.0, alertTime=10994]
+2022-07-25 18:28:05.900  INFO -skip to stepIndex = 4,loopIndex = 1,total seconds=11000
+2022-07-25 18:45:54.903  INFO -step index change:ChnDataPack [chnIndex=8, voltage=3836.7292318025893, backupVoltage=0.0, powerVoltage=0.0, current=0.0, capacity=0.0, stepElapsedTime=0, loopIndex=0, stepIndex=0, alertCode=NORMAL, state=STOP, workMode=SLEEP, important=false, alertVolt=0.0, alertCurrent=0.0, alertTime=0]

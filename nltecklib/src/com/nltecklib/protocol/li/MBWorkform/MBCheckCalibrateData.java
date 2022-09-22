@@ -1,0 +1,155 @@
+package com.nltecklib.protocol.li.MBWorkform;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.nltecklib.protocol.Configable;
+import com.nltecklib.protocol.Queryable;
+import com.nltecklib.protocol.Responsable;
+import com.nltecklib.protocol.li.Data;
+import com.nltecklib.protocol.li.Environment.Code;
+import com.nltecklib.protocol.li.MBWorkform.MBWorkformEnvironment.MBWorkformCode;
+import com.nltecklib.protocol.li.check2.Check2Environment.AdcGroup;
+import com.nltecklib.protocol.li.check2.Check2Environment.VoltMode;
+import com.nltecklib.protocol.li.check2.Check2Environment.Work;
+import com.nltecklib.protocol.li.main.PoleData.Pole;
+import com.nltecklib.protocol.util.ProtocolUtil;
+
+/**
+ * @author wavy_zheng
+ * @version 创建时间：2020年10月31日 上午11:01:43 类说明
+ */
+public class MBCheckCalibrateData extends Data implements Configable, Queryable, Responsable {
+
+	private Pole pole = Pole.NORMAL;
+	private VoltMode voltMode = VoltMode.Backup;
+	private Work work = Work.NONE;
+	private List<AdcGroup> adcs = new ArrayList<>();
+
+	@Override
+	public boolean supportUnit() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean supportDriver() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean supportChannel() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	public Pole getPole() {
+		return pole;
+	}
+
+	public void setPole(Pole pole) {
+		this.pole = pole;
+	}
+
+	public VoltMode getVoltMode() {
+		return voltMode;
+	}
+
+	public void setVoltMode(VoltMode voltMode) {
+		this.voltMode = voltMode;
+	}
+
+	public Work getWork() {
+		return work;
+	}
+
+	public void setWork(Work work) {
+		this.work = work;
+	}
+
+	public List<AdcGroup> getAdcs() {
+		return adcs;
+	}
+
+	public void setAdcs(List<AdcGroup> adcs) {
+		this.adcs = adcs;
+	}
+
+	@Override
+	public void encode() {
+
+		data.add((byte) unitIndex);
+		data.add((byte) chnIndex);
+		data.add((byte) pole.ordinal());
+		data.add((byte) voltMode.ordinal());
+		data.add((byte) work.ordinal());
+		data.add((byte) adcs.size()); // 下发不带数据
+
+		for (AdcGroup group : adcs) {
+			data.addAll(Arrays.asList(ProtocolUtil.split((long) (group.adc2 * Math.pow(10, voltageResolution)), 3, true)));
+			data.addAll(Arrays.asList(ProtocolUtil.split((long) (group.adc1 * Math.pow(10, voltageResolution)), 3, true)));
+		}
+
+	}
+
+	@Override
+	public void decode(List<Byte> encodeData) {
+		data = encodeData;
+		int index = 0;
+		unitIndex = ProtocolUtil.getUnsignedByte(data.get(index++));
+		// 通道
+		chnIndex = ProtocolUtil.getUnsignedByte(data.get(index++));
+
+		int flag = ProtocolUtil.getUnsignedByte(data.get(index++));
+		if (flag >= Pole.values().length) {
+
+			throw new RuntimeException("the pole value is error:" + flag);
+		}
+		pole = Pole.values()[flag];
+
+		flag = ProtocolUtil.getUnsignedByte(data.get(index++));
+		if (flag >= VoltMode.values().length) {
+
+			throw new RuntimeException("the voltmode value is error:" + flag);
+		}
+		voltMode = VoltMode.values()[flag];
+
+		flag = ProtocolUtil.getUnsignedByte(data.get(index++));
+		if (flag >= Work.values().length) {
+
+			throw new RuntimeException("the work value is error:" + flag);
+		}
+		work = Work.values()[flag];
+
+		int count = ProtocolUtil.getUnsignedByte(data.get(index++));
+		for (int n = 0; n < count; n++) {
+
+			AdcGroup group = new AdcGroup();
+			// adc
+			group.adc2 = (double) ProtocolUtil.compose(data.subList(index, index + 3).toArray(new Byte[0]),
+					true) / Math.pow(10, voltageResolution);
+			index += 3;
+
+			group.adc1 = (double) ProtocolUtil.compose(data.subList(index, index + 3).toArray(new Byte[0]),
+					true) / Math.pow(10, voltageResolution);
+			index += 3;
+			adcs.add(group);
+		}
+
+	}
+
+	@Override
+	public Code getCode() {
+		// TODO Auto-generated method stub
+		return MBWorkformCode.CheckCalibrateCode;
+	}
+
+	@Override
+	public String toString() {
+		return "MBCheckCalibrateData [pole=" + pole + ", voltMode=" + voltMode + ", work=" + work + ", adcs=" + adcs
+				+ "]";
+	}
+
+}

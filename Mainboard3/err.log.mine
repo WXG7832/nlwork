@@ -1,0 +1,453 @@
+2020-11-27 17:20:10.878  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:89)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:174)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:283)
+
+2020-11-27 17:29:00.267  ERROR -com.nlteck.AlertException
+	at com.nlteck.service.CoreService.createAndInitCoreFirms(CoreService.java:122)
+	at com.nlteck.service.CoreService.init(CoreService.java:135)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:181)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:283)
+
+2020-11-27 17:29:47.117  ERROR -com.nlteck.AlertException
+	at com.nlteck.service.CoreService.createAndInitCoreFirms(CoreService.java:122)
+	at com.nlteck.service.CoreService.init(CoreService.java:135)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:181)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:283)
+
+2020-11-27 17:34:09.988  INFO -java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.ControlUnit.createUnit(ControlUnit.java:985)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:216)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:82)
+	at com.nlteck.service.CoreService.init(CoreService.java:136)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:181)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:283)
+
+2020-12-07 09:30:40.286  INFO -java.lang.NullPointerException
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at com.nlteck.service.FileSaveService.readProcedureFile(FileSaveService.java:419)
+	at com.nlteck.firmware.ControlUnit.loadAllParamsFromFile(ControlUnit.java:221)
+	at com.nlteck.firmware.ControlUnit.init(ControlUnit.java:188)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:217)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:82)
+	at com.nlteck.service.CoreService.init(CoreService.java:152)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:178)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:286)
+
+2020-12-10 13:40:30.644  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:88)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:169)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:285)
+
+2020-12-10 13:42:56.297  ERROR -java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.accessory.FanManager.decodeFanState(FanManager.java:222)
+	at com.nlteck.service.accessory.FanManager$1.run(FanManager.java:122)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2020-12-10 13:43:09.275  ERROR -java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.accessory.FanManager.decodeFanState(FanManager.java:222)
+	at com.nlteck.service.accessory.FanManager$1.run(FanManager.java:122)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2020-12-10 13:43:14.278  ERROR -java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.accessory.FanManager.decodeFanState(FanManager.java:222)
+	at com.nlteck.service.accessory.FanManager$1.run(FanManager.java:122)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2020-12-10 13:43:19.280  ERROR -java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.accessory.FanManager.decodeFanState(FanManager.java:222)
+	at com.nlteck.service.accessory.FanManager$1.run(FanManager.java:122)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2020-12-10 13:43:24.282  ERROR -java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.accessory.FanManager.decodeFanState(FanManager.java:222)
+	at com.nlteck.service.accessory.FanManager$1.run(FanManager.java:122)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2020-12-10 13:44:15.965  ERROR -com.nlteck.AlertException
+	at com.nlteck.service.CoreService.createAndInitCoreFirms(CoreService.java:141)
+	at com.nlteck.service.CoreService.init(CoreService.java:154)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:176)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:285)
+
+2020-12-14 15:45:30.730  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:101)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:169)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:287)
+
+2020-12-14 15:47:16.928  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:101)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:169)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:287)
+
+2020-12-14 15:48:13.907  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:101)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:169)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:287)
+
+2020-12-15 16:21:03.993  INFO -org.dom4j.DocumentException
+	at org.dom4j.io.SAXReader.read(SAXReader.java:468)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:329)
+	at com.nlteck.util.XmlUtil.loadXml(XmlUtil.java:34)
+	at com.nlteck.i18n.I18N.init(I18N.java:223)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:143)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:287)
+Caused by: java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:449)
+	... 5 more
+Caused by: java.lang.NullPointerException
+	... 16 more
+
+2020-12-25 13:31:23.709  INFO -java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:231)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:103)
+	at com.nlteck.service.CoreService.init(CoreService.java:200)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:167)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:280)
+
+2021-01-16 21:22:24.800  INFO -org.dom4j.DocumentException: Error on line 173 of document  : 元素类型 "item" 必须后跟属性规范 ">" 或 "/>"。
+	at org.dom4j.io.SAXReader.read(SAXReader.java:466)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:329)
+	at com.nlteck.util.XmlUtil.loadXml(XmlUtil.java:34)
+	at com.nlteck.i18n.I18N.init(I18N.java:283)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:152)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:323)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 173; columnNumber: 2; 元素类型 "item" 必须后跟属性规范 ">" 或 "/>"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.seekCloseOfStartTag(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:449)
+	... 5 more
+
+2021-01-16 21:22:35.253  INFO -org.dom4j.DocumentException: Error on line 173 of document  : 元素类型 "item" 必须后跟属性规范 ">" 或 "/>"。
+	at org.dom4j.io.SAXReader.read(SAXReader.java:466)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:329)
+	at com.nlteck.util.XmlUtil.loadXml(XmlUtil.java:34)
+	at com.nlteck.i18n.I18N.init(I18N.java:283)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:152)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:323)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 173; columnNumber: 2; 元素类型 "item" 必须后跟属性规范 ">" 或 "/>"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.seekCloseOfStartTag(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:449)
+	... 5 more
+
+2021-03-23 09:14:16.255  ERROR -com.nlteck.AlertException: 读取设备通道1运行状态文件失败:chnIndexInDriver
+	at com.nlteck.service.FileSaveService.readChnRuntimeState(FileSaveService.java:1140)
+	at com.nlteck.service.FileSaveService.readUnitRuntimeState(FileSaveService.java:1359)
+	at com.nlteck.service.CoreService.init(CoreService.java:236)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:183)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:312)
+
+2021-03-23 09:23:55.929  ERROR -com.nlteck.AlertException: 读取设备通道1运行状态文件失败:chnIndexInDriver
+	at com.nlteck.service.FileSaveService.readChnRuntimeState(FileSaveService.java:1161)
+	at com.nlteck.service.FileSaveService.readUnitRuntimeState(FileSaveService.java:1388)
+	at com.nlteck.service.CoreService.init(CoreService.java:236)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:183)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:312)
+
+2021-03-23 09:24:57.729  ERROR -com.nlteck.AlertException: 读取设备通道1运行状态文件失败:chnIndexInDriver
+	at com.nlteck.service.FileSaveService.readChnRuntimeState(FileSaveService.java:1161)
+	at com.nlteck.service.FileSaveService.readUnitRuntimeState(FileSaveService.java:1388)
+	at com.nlteck.service.CoreService.init(CoreService.java:236)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:183)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:312)
+
+2021-04-26 16:38:09.412  INFO -java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:240)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:137)
+	at com.nlteck.service.CoreService.init(CoreService.java:245)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:183)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:312)
+
+2021-04-26 16:38:36.784  INFO -java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.FileSaveService.readLifeFile(FileSaveService.java:2108)
+	at com.nlteck.service.CoreService.init(CoreService.java:287)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:183)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:312)
+
+2021-06-28 15:44:37.806  INFO -java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:241)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:132)
+	at com.nlteck.service.CoreService.init(CoreService.java:243)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:186)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:315)
+
+2021-06-28 15:44:45.453  INFO -java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:241)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:132)
+	at com.nlteck.service.CoreService.init(CoreService.java:243)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:186)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:315)
+
+2021-06-28 15:45:22.173  INFO -java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.service.FileSaveService.readLifeFile(FileSaveService.java:2135)
+	at com.nlteck.service.CoreService.init(CoreService.java:324)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:186)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:315)
+
+2022-01-24 09:57:50.646  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:327)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:179)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:319)
+
+2022-01-24 10:00:57.309  INFO -java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.MainBoard.getDriverByIndex(MainBoard.java:753)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:255)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:151)
+	at com.nlteck.service.CoreService.init(CoreService.java:237)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:186)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:319)
+
+2022-01-24 10:01:49.017  INFO -java.lang.IndexOutOfBoundsException: Index: 9, Size: 9
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.MainBoard.getDriverByIndex(MainBoard.java:753)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:255)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:151)
+	at com.nlteck.service.CoreService.init(CoreService.java:237)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:186)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:319)
+
+2022-01-24 10:02:32.836  INFO -java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.MainBoard.getChannelByChnIndex(MainBoard.java:587)
+	at com.nlteck.service.FileSaveService.readChnSwitchState(FileSaveService.java:182)
+	at com.nlteck.service.CoreService.init(CoreService.java:283)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:186)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:319)
+
+2022-01-24 11:11:32.061  INFO -java.lang.NullPointerException
+	at com.nlteck.service.FileSaveService.readLifeFile(FileSaveService.java:2133)
+	at com.nlteck.service.CoreService.init(CoreService.java:312)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:186)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:319)
+
+2022-06-07 15:44:06.623  INFO -java.lang.NullPointerException
+	at com.nlteck.service.FileSaveService.readLifeFile(FileSaveService.java:2164)
+	at com.nlteck.service.CoreService.init(CoreService.java:318)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:233)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-07 15:44:18.759  INFO -java.lang.NullPointerException
+	at com.nlteck.service.FileSaveService.readLifeFile(FileSaveService.java:2164)
+	at com.nlteck.service.CoreService.init(CoreService.java:318)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:233)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-09 09:20:35.749  INFO -java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.MainBoard.getDriverByIndex(MainBoard.java:744)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:241)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:154)
+	at com.nlteck.service.CoreService.init(CoreService.java:240)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:233)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-09 09:21:58.361  INFO -java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.MainBoard.getDriverByIndex(MainBoard.java:744)
+	at com.nlteck.service.FileSaveService.readLifeFile(FileSaveService.java:2141)
+	at com.nlteck.service.CoreService.init(CoreService.java:318)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:233)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-09 13:39:29.263  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:320)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:226)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-09 13:44:58.829  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:320)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:226)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-09 13:45:42.837  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:320)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:226)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 10:59:27.043  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:320)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:226)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 11:01:19.279  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:320)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:226)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 11:02:23.243  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:320)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:226)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 11:02:33.112  ERROR -com.nlteck.AlertException: 初始化配件失败:null
+	at com.nlteck.service.accessory.AccessoriesService.init(AccessoriesService.java:320)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:226)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 11:03:16.779  INFO -java.lang.IndexOutOfBoundsException: Index: 4, Size: 4
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.MainBoard.getDriverByIndex(MainBoard.java:744)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:241)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:154)
+	at com.nlteck.service.CoreService.init(CoreService.java:240)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:233)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 11:03:27.340  INFO -java.lang.IndexOutOfBoundsException: Index: 4, Size: 4
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.MainBoard.getDriverByIndex(MainBoard.java:744)
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:241)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:154)
+	at com.nlteck.service.CoreService.init(CoreService.java:240)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:233)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 11:03:49.211  INFO -java.lang.IndexOutOfBoundsException: Index: 4, Size: 4
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.nlteck.firmware.MainBoard.getDriverByIndex(MainBoard.java:744)
+	at com.nlteck.service.FileSaveService.readLifeFile(FileSaveService.java:2141)
+	at com.nlteck.service.CoreService.init(CoreService.java:318)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:233)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 11:27:03.434  ERROR -com.nlteck.AlertException: 打开串口null失败
+	at com.nlteck.service.accessory.PortManager.init(PortManager.java:58)
+	at com.nlteck.Context.initServices(Context.java:133)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:212)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 12:37:49.138  ERROR -com.nlteck.AlertException: 打开串口/dev/ttyS1失败
+	at com.nlteck.service.accessory.PortManager.init(PortManager.java:58)
+	at com.nlteck.Context.initServices(Context.java:133)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:212)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 12:38:42.222  ERROR -com.nlteck.AlertException: 打开串口/dev/ttyS1失败
+	at com.nlteck.service.accessory.PortManager.init(PortManager.java:58)
+	at com.nlteck.Context.initServices(Context.java:133)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:212)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-06-20 13:41:37.948  ERROR -com.nlteck.AlertException: 打开串口/dev/ttyS1失败
+	at com.nlteck.service.accessory.PortManager.init(PortManager.java:58)
+	at com.nlteck.Context.initServices(Context.java:133)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:212)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:366)
+
+2022-08-03 17:46:50.540  ERROR -com.nlteck.AlertException: 初始化运行灯发生错误
+	at com.nlteck.RunningLamp.<init>(RunningLamp.java:41)
+	at com.nlteck.Context.initServices(Context.java:150)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:229)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:403)
+
+2022-08-03 18:11:58.117  ERROR -com.nlteck.AlertException: 载入 %s发生错误:%s
+	at com.nlteck.service.FileSaveService.readStructFile(FileSaveService.java:222)
+	at com.nlteck.service.CoreService.createAndInitControlUnit(CoreService.java:156)
+	at com.nlteck.service.CoreService.init(CoreService.java:242)
+	at com.nlteck.firmware.PowerboxMainBoard.init(PowerboxMainBoard.java:250)
+	at com.nlteck.firmware.PowerboxMainBoard.main(PowerboxMainBoard.java:403)
+

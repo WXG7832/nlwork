@@ -1,0 +1,278 @@
+package com.nltecklib.protocol.li.PCWorkform;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.nltecklib.protocol.Configable;
+import com.nltecklib.protocol.Queryable;
+import com.nltecklib.protocol.Responsable;
+import com.nltecklib.protocol.li.Data;
+import com.nltecklib.protocol.li.Environment.Code;
+import com.nltecklib.protocol.li.PCWorkform.PCWorkformEnvironment.PCWorkformCode;
+import com.nltecklib.protocol.li.logic2.Logic2Environment.CalMode;
+import com.nltecklib.protocol.li.logic2.Logic2Environment.CalculateAdcGroup;
+import com.nltecklib.protocol.li.main.PoleData.Pole;
+import com.nltecklib.protocol.util.ProtocolUtil;
+
+/**
+ * @author wavy_zheng
+ * @version 创建时间：2020年10月30日 下午5:02:53 计量调试协议
+ */
+public class LogicCalculateDebugData extends Data implements Configable, Queryable, Responsable {
+
+	private Pole pole = Pole.NORMAL;
+	private CalMode workMode;
+	private double calculateDot; // 计量点
+
+	private List<CalculateAdcGroup> groups = new ArrayList<>();
+
+	private double programK;
+	private double programB;
+	private double adcK2;
+	private double adcB2;
+	private double adcK1;
+	private double adcB1;
+	private long programVal; // 程控值
+
+
+	@Override
+	public boolean supportUnit() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean supportDriver() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean supportChannel() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	public void setProgramK(double programK) {
+		this.programK = programK;
+	}
+
+	public void setProgramB(double programB) {
+		this.programB = programB;
+	}
+
+	public void setProgramVal(long programVal) {
+		this.programVal = programVal;
+	}
+
+	@Override
+	public void encode() {
+
+		data.add((byte) unitIndex);
+		// 通道号
+		data.add((byte) chnIndex);
+		// 极性
+		data.add((byte) pole.ordinal());
+		// 工作方式
+		data.add((byte) (workMode.ordinal()));
+		// 计量点
+		data.addAll(Arrays.asList(ProtocolUtil.split((long) (calculateDot * Math.pow(10, currentResolution)), 3, true)));
+		// 程控K
+		data.addAll(Arrays.asList(ProtocolUtil.split((long) (programK * Math.pow(10, programKResolution)), 4, true)));
+		// 程控B
+		data.addAll(Arrays.asList(ProtocolUtil.splitSpecialMinus((long) (programB * Math.pow(10, programBResolution)), 4, true)));
+		// 程控值
+		data.addAll(Arrays.asList(ProtocolUtil.split(programVal, 2, true)));
+		// adc K1
+		data.addAll(Arrays.asList(ProtocolUtil.split((long) (adcK1 * Math.pow(10, adcKResolution)), 4, true)));
+		// adc B1
+		data.addAll(Arrays.asList(ProtocolUtil.splitSpecialMinus((long) (adcB1 * Math.pow(10, adcBResolution)), 4, true)));
+		// adc K2
+		data.addAll(Arrays.asList(ProtocolUtil.split((long) (adcK2 * Math.pow(10, adcKResolution)), 4, true)));
+		// adc B2
+		data.addAll(Arrays.asList(ProtocolUtil.splitSpecialMinus((long) (adcB2 * Math.pow(10, adcBResolution)), 4, true)));
+
+		data.add((byte) groups.size());
+
+		for (int n = 0; n < groups.size(); n++) {
+			for (CalculateAdcGroup group : groups) {
+				data.addAll(Arrays.asList(ProtocolUtil.split((long) (group.adc2 * Math.pow(10, currentResolution)), 3, true)));
+				data.addAll(Arrays.asList(ProtocolUtil.split((long) (group.adc1 * Math.pow(10, currentResolution)), 3, true)));
+				data.addAll(Arrays.asList(ProtocolUtil.split((long) (group.finalAdc * Math.pow(10, currentResolution)), 3, true)));
+			}
+		}
+	}
+
+	@Override
+	public void decode(List<Byte> encodeData) {
+
+		data = encodeData;
+		int index = 0;
+		unitIndex = ProtocolUtil.getUnsignedByte(data.get(index++));
+		chnIndex = ProtocolUtil.getUnsignedByte(data.get(index++));
+		int code = ProtocolUtil.getUnsignedByte(data.get(index++));
+		if (code > Pole.values().length - 1) {
+
+			throw new RuntimeException("error pole code :" + code);
+		}
+		pole = Pole.values()[code];
+		// 工作方式
+		code = ProtocolUtil.getUnsignedByte(data.get(index++));
+		if (code > CalMode.values().length - 1) {
+
+			throw new RuntimeException("error workmode code :" + code);
+		}
+		workMode = CalMode.values()[code]; // 因逻辑板程序问题兼容+1
+		// 计量点
+		calculateDot = (double) ProtocolUtil.compose(data.subList(index, index + 3).toArray(new Byte[0]), true) / Math.pow(10, currentResolution);
+		index += 3;
+
+		// 程控K
+		programK = (double) ProtocolUtil.compose(data.subList(index, index + 4).toArray(new Byte[0]), true)
+				/ Math.pow(10, programKResolution);
+		index += 4;
+		// 程控B
+		programB = (double) ProtocolUtil.composeSpecialMinus(data.subList(index, index + 4).toArray(new Byte[0]), true)
+				/ Math.pow(10, programBResolution);
+		index += 4;
+		// 程控值
+		programVal = ProtocolUtil.compose(data.subList(index, index + 2).toArray(new Byte[0]), true);
+		index += 2;
+		// adc k
+		adcK1 = (double) ProtocolUtil.compose(data.subList(index, index + 4).toArray(new Byte[0]), true)
+				/ Math.pow(10, adcKResolution);
+		index += 4;
+		// adc b
+		adcB1 = (double) ProtocolUtil.composeSpecialMinus(data.subList(index, index + 4).toArray(new Byte[0]), true)
+				/ Math.pow(10, adcBResolution);
+		index += 4;
+		// adc k
+		adcK2 = (double) ProtocolUtil.compose(data.subList(index, index + 4).toArray(new Byte[0]), true)
+				/ Math.pow(10, adcKResolution);
+		index += 4;
+		// adc b
+		adcB2 = (double) ProtocolUtil.composeSpecialMinus(data.subList(index, index + 4).toArray(new Byte[0]), true)
+				/ Math.pow(10, adcBResolution);
+		index += 4;
+
+		int count = ProtocolUtil.getUnsignedByte(data.get(index++));
+
+		for (int n = 0; n < count; n++) {
+			CalculateAdcGroup group = new CalculateAdcGroup();
+			// 原始ADC
+			group.adc2 = (double) ProtocolUtil.compose(data.subList(index, index + 3).toArray(new Byte[0]), true) / Math.pow(10, currentResolution);
+			index += 3;
+
+			// 原始ADC
+			group.adc1 = (double) ProtocolUtil.compose(data.subList(index, index + 3).toArray(new Byte[0]), true) / Math.pow(10, currentResolution);
+			index += 3;
+
+			// final Adc
+			group.finalAdc = (double) ProtocolUtil.compose(data.subList(index, index + 3).toArray(new Byte[0]), true)
+					/ Math.pow(10, currentResolution);
+			index += 3;
+
+			groups.add(group);
+		}
+
+	}
+
+	@Override
+	public Code getCode() {
+		return PCWorkformCode.LogicCalculateDebugCode;
+	}
+
+	public Pole getPole() {
+		return pole;
+	}
+
+	public void setPole(Pole pole) {
+		this.pole = pole;
+	}
+
+	public int getChnIndex() {
+		return chnIndex;
+	}
+
+	public void setChnIndex(int chnIndex) {
+		this.chnIndex = chnIndex;
+	}
+
+	public CalMode getWorkMode() {
+		return workMode;
+	}
+
+	public void setWorkMode(CalMode workMode) {
+		this.workMode = workMode;
+	}
+
+	public double getCalculateDot() {
+		return calculateDot;
+	}
+
+	public void setCalculateDot(double calculateDot) {
+		this.calculateDot = calculateDot;
+	}
+
+	public List<CalculateAdcGroup> getGroups() {
+		return groups;
+	}
+
+	public void setGroups(List<CalculateAdcGroup> groups) {
+		this.groups = groups;
+	}
+
+	public double getProgramK() {
+		return programK;
+	}
+
+	public double getProgramB() {
+		return programB;
+	}
+
+
+	public double getAdcK2() {
+		return adcK2;
+	}
+
+	public void setAdcK2(double adcK2) {
+		this.adcK2 = adcK2;
+	}
+
+	public double getAdcB2() {
+		return adcB2;
+	}
+
+	public void setAdcB2(double adcB2) {
+		this.adcB2 = adcB2;
+	}
+
+	public double getAdcK1() {
+		return adcK1;
+	}
+
+	public void setAdcK1(double adcK1) {
+		this.adcK1 = adcK1;
+	}
+
+	public double getAdcB1() {
+		return adcB1;
+	}
+
+	public void setAdcB1(double adcB1) {
+		this.adcB1 = adcB1;
+	}
+
+	public long getProgramVal() {
+		return programVal;
+	}
+
+	@Override
+	public String toString() {
+		return "LogicCalculateDebugData [pole=" + pole + ", workMode=" + workMode + ", calculateDot=" + calculateDot
+				+ ", groups=" + groups + ", programK=" + programK + ", programB=" + programB + ", adcK2=" + adcK2
+				+ ", adcB2=" + adcB2 + ", adcK1=" + adcK1 + ", adcB1=" + adcB1 + ", programVal=" + programVal + "]";
+	}
+
+}

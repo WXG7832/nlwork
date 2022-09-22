@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="lib/nltecklib.v1.0.6.jar" sourcepath="E:/纽联科技/nltecklib"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-aop-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-aspects-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-beans-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-context-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-context-support-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-core-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-expression-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-framework-bom-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-jdbc-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-orm-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-test-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-tx-4.0.6.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-web-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/mybatis-spring-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.8.6-sources.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/javacsv.jar"/>
+	<classpathentry kind="lib" path="lib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/xmlschema-core-2.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="lib/poi-scratchpad-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/nlteckSWTLib.v1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/javassist-3.28.0-GA.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/commons-net-3.6.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-2.1.0.jar" sourcepath="C:/Users/Administrator/.m2/repository/org/dom4j/dom4j/2.1.0/dom4j-2.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/h2.jar"/>
+	<classpathentry kind="lib" path="lib/JavaSerial.0.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/mina-core-2.0.21.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39-bin.jar"/>
+	<classpathentry kind="lib" path="lib/mybatis-3.5.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+	<classpathentry kind="lib" path="lib/poi-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-4.1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 延时配置文件 -->
+<delay> 
+  <!-- default 默认延时规则 -->  
+  <!-- programSetDelay 程控设置后延时 -->  
+  <!-- moduleOpenDelay 膜片打开后延时 -->  
+  <!-- moduleCloseDelay 膜片关闭后延时 -->  
+  <!-- readMeterDelay 读取adc后到读取万用表的延时 -->  
+  <!-- switchMeterDelay 打开/关闭万用表继电器延时 -->  
+  <!-- modeChangeDelay 模式切换后 打开膜片到读取adc的延时 -->  
+  <!-- dotClose 设置新的程控之前需要关闭膜片 -->  
+  <default programSetDelay="750" moduleOpenDelay="3000" moduleCloseDelay="100" readMeterDelay="0" turnOnMeterDelay="80" turnOffMeterDelay="60" modeChangeDelay="3000" dotClose="false" programSetDelayCV2="2000"/>  
+  <!-- 参考示例 mode="DC" pole="NORMAL" precision="1" dotClose="true" programSetDelay="100" modeOpenDelay="3000" readMeterDelay="0" -->  
+  <!-- detail 可以自定义哪个模式的哪个延时，不设置则使用默认延时规则 -->  
+  <!-- mode CC CV DC 之一大小写 指定模式 【此项为必填项】 -->  
+  <!-- pole 极性 NORMAL 正极性 REVERSE 反极性 注意大写 不写表示全部极性 -->  
+  <!-- precision 精度档位 不写表示全部精度档位 -->  
+  <!-- programSetDelay 程控设置后延时 ，不设置则使用默认延时规则 -->  
+  <!-- moduleOpenDelay 膜片打开后延时 ，不设置则使用默认延时规则 -->  
+  <!-- moduleCloseDelay 膜片关闭后延时，不设置则使用默认延时规则 -->  
+  <!-- readMeterDelay 读取adc后到读取万用表的延时，不设置则使用默认延时规则 -->  
+  <!-- switchMeterDelay 打开/关闭万用表继电器延时 ，不设置则使用默认延时规则 -->  
+  <!-- modeChangeDelay 模式切换后 打开膜片到读取adc的延时 ，不设置则使用默认延时规则 -->  
+  <!-- dotClose 设置新的程控之前需要关闭膜片 ，不设置则使用默认延时规则 -->  
+  <detail mode="DC" pole="POSITIVE" precision="1" dotClose="true" programSetDelay="850" programSetDelayCV2="2000" moduleOpenDelay="1070" moduleCloseDelay="100" readMeterDelay="0" turnOnMeterDelay="80" turnOffMeterDelay="60" modeChangeDelay="1050"/>
+  <detail mode="DC" pole="POSITIVE" precision="1" dotClose="true" programSetDelay="950" programSetDelayCV2="2000" moduleOpenDelay="1070" moduleCloseDelay="100" readMeterDelay="0" turnOnMeterDelay="80" turnOffMeterDelay="60" modeChangeDelay="3000"/>
+  <detail mode="CC" pole="POSITIVE" precision="1" dotClose="false" programSetDelay="750" programSetDelayCV2="2000" moduleOpenDelay="3000" moduleCloseDelay="100" readMeterDelay="0" turnOnMeterDelay="3000" turnOffMeterDelay="60" modeChangeDelay="5000"/>
+</delay>

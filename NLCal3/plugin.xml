@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="NLCal"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://NLCal/com.nlteck.E4LifeCycle">
+         </property>
+         <property
+               name="appName"
+               value="NLCal">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.nlteck.parts.LogicConsolePart"
+            id="com.nlteck.parts.LogicConsolePart"
+            name="New ViewPart">
+      </view>
+   </extension>
+
+</plugin>
