@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 精度档位配置文件 -->
+<rangeCurrentPrecision>
+	<!-- level 档位 -->
+	<!-- precide 暂时不用 -->
+	<!-- min 档位电流下限（不含）-->
+	<!-- max 档位电流上限（含） 高档位max需要与低档位min相同-->
+	<!-- maxAdcOffset 档位计量adc偏差 -->
+	<!-- maxMeterOffset 档位计量万用表偏差 -->
+	<range level="0" precide="2.0" min="200" max="60000" maxAdcOffset="300" maxMeterOffset="200"/>
+	<range level="1" precide="1.0" min="30" max="200" maxAdcOffset="300" maxMeterOffset="200"/>
+</rangeCurrentPrecision>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- adc读取稳定配置文件 -->
+<!-- sampleCount 最大读取次数 -->
+<!-- maxSigma 样本保准差上限 -->
+<!-- trailCount trailCount adc最大最小共去掉个数 -->
+<!-- adcReadCount 每次读取的adc个数 -->
+<!-- adcRetryDelay 不稳定下次读取间隔时间，单位毫秒 -->
+<steadyCfg sampleCount="30" maxSigma="2" trailCount="20" adcReadCount="3" adcRetryDelay="500" adcReadCountCV="30" />

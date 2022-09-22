@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<calculatePlan maxMeterOffset="999999.0" maxAdcOffset="600" maxAdcOffsetCheck="600" maxAdcOffsetCV2="600" minCalculateCurrent="0.0" maxCalculateCurrent="0.0" minCalculateVoltage="0.0" maxCalculateVoltage="0.0">
+  <mode mode="CC" pole="NORMAL" disabled="false">
+    <dot>60</dot>
+    <dot>500</dot>
+    <dot>1000</dot>
+    <dot>3000</dot>
+    <dot>5000</dot>
+  </mode>
+  <mode mode="CV" pole="NORMAL" disabled="false">
+    <dot>1000</dot>
+    <dot>2000</dot>
+    <dot>3000</dot>
+    <dot>4000</dot>
+  </mode>
+</calculatePlan>

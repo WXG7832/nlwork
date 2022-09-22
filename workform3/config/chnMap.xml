@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 实现校准板的通道映射 -->
+<maps enable="false">
+	<chnMap calboardIndex="0">
+		<chn chnIndex="0" mapChnIndex="0" />
+		<chn chnIndex="1" mapChnIndex="1" />
+		<chn chnIndex="2" mapChnIndex="2" />
+		<chn chnIndex="3" mapChnIndex="3" />
+		<chn chnIndex="4" mapChnIndex="4" />
+		<chn chnIndex="5" mapChnIndex="5" />
+		<chn chnIndex="6" mapChnIndex="6" />
+		<chn chnIndex="7" mapChnIndex="7" />
+		<chn chnIndex="8" mapChnIndex="8" />
+		<chn chnIndex="9" mapChnIndex="0" />
+		<chn chnIndex="10" mapChnIndex="1" />
+		<chn chnIndex="11" mapChnIndex="2" />
+		<chn chnIndex="12" mapChnIndex="3" />
+		<chn chnIndex="13" mapChnIndex="4" />
+		<chn chnIndex="14" mapChnIndex="5" />
+		<chn chnIndex="15" mapChnIndex="6" />
+		<chn chnIndex="16" mapChnIndex="7" />
+		<chn chnIndex="17" mapChnIndex="8" />
+		<chn chnIndex="18" mapChnIndex="0" />
+		<chn chnIndex="19" mapChnIndex="1" />
+		<chn chnIndex="20" mapChnIndex="2" />
+		<chn chnIndex="21" mapChnIndex="3" />
+		<chn chnIndex="22" mapChnIndex="4" />
+		<chn chnIndex="23" mapChnIndex="5" />
+		<chn chnIndex="24" mapChnIndex="6" />
+		<chn chnIndex="25" mapChnIndex="7" />
+		<chn chnIndex="26" mapChnIndex="8" />
+		<chn chnIndex="27" mapChnIndex="0" />
+		<chn chnIndex="28" mapChnIndex="1" />
+		<chn chnIndex="29" mapChnIndex="2" />
+		<chn chnIndex="30" mapChnIndex="3" />
+		<chn chnIndex="31" mapChnIndex="4" />
+		<chn chnIndex="32" mapChnIndex="5" />
+		<chn chnIndex="33" mapChnIndex="6" />
+		<chn chnIndex="34" mapChnIndex="7" />
+		<chn chnIndex="35" mapChnIndex="8" />
+		<chn chnIndex="36" mapChnIndex="0" />
+		<chn chnIndex="37" mapChnIndex="1" />
+		<chn chnIndex="38" mapChnIndex="2" />
+		<chn chnIndex="39" mapChnIndex="3" />
+		<chn chnIndex="40" mapChnIndex="4" />
+		<chn chnIndex="41" mapChnIndex="5" />
+		<chn chnIndex="42" mapChnIndex="6" />
+		<chn chnIndex="43" mapChnIndex="7" />
+		<chn chnIndex="44" mapChnIndex="8" />
+		<chn chnIndex="45" mapChnIndex="0" />
+		<chn chnIndex="46" mapChnIndex="1" />
+		<chn chnIndex="47" mapChnIndex="2" />
+		<chn chnIndex="48" mapChnIndex="3" />
+		<chn chnIndex="49" mapChnIndex="4" />
+		<chn chnIndex="50" mapChnIndex="5" />
+		<chn chnIndex="51" mapChnIndex="6" />
+		<chn chnIndex="52" mapChnIndex="7" />
+		<chn chnIndex="53" mapChnIndex="8" />
+		<chn chnIndex="54" mapChnIndex="0" />
+		<chn chnIndex="55" mapChnIndex="1" />
+		<chn chnIndex="56" mapChnIndex="2" />
+		<chn chnIndex="57" mapChnIndex="3" />
+		<chn chnIndex="58" mapChnIndex="4" />
+		<chn chnIndex="59" mapChnIndex="5" />
+		<chn chnIndex="60" mapChnIndex="6" />
+		<chn chnIndex="61" mapChnIndex="7" />
+		<chn chnIndex="62" mapChnIndex="8" />
+		<chn chnIndex="63" mapChnIndex="0" />
+		<chn chnIndex="64" mapChnIndex="1" />
+		<chn chnIndex="65" mapChnIndex="2" />
+		<chn chnIndex="66" mapChnIndex="3" />
+		<chn chnIndex="67" mapChnIndex="4" />
+		<chn chnIndex="68" mapChnIndex="5" />
+		<chn chnIndex="68" mapChnIndex="6" />
+		<chn chnIndex="70" mapChnIndex="7" />
+		<chn chnIndex="71" mapChnIndex="8" />
+	
+		
+	</chnMap>
+	<!-- <chnMap calboardIndex="1">
+		<chn chnIndex="28" mapChnIndex="35" />
+		<chn chnIndex="29" mapChnIndex="34" />
+		<chn chnIndex="30" mapChnIndex="29" />
+		<chn chnIndex="31" mapChnIndex="28" />
+		<chn chnIndex="36" mapChnIndex="33" />
+		<chn chnIndex="37" mapChnIndex="32" />
+		<chn chnIndex="38" mapChnIndex="27" />
+		<chn chnIndex="39" mapChnIndex="26" />
+		<chn chnIndex="44" mapChnIndex="31" />
+		<chn chnIndex="45" mapChnIndex="30" />
+		<chn chnIndex="46" mapChnIndex="25" />
+		<chn chnIndex="47" mapChnIndex="24" />
+		<chn chnIndex="48" mapChnIndex="23" />
+		<chn chnIndex="49" mapChnIndex="22" />
+		<chn chnIndex="50" mapChnIndex="17" />
+		<chn chnIndex="51" mapChnIndex="16" />
+		<chn chnIndex="52" mapChnIndex="11" />
+		<chn chnIndex="53" mapChnIndex="10" />
+		<chn chnIndex="54" mapChnIndex="5" />
+		<chn chnIndex="55" mapChnIndex="4" />
+		<chn chnIndex="56" mapChnIndex="21" />
+		<chn chnIndex="57" mapChnIndex="20" />
+		<chn chnIndex="58" mapChnIndex="15" />
+		<chn chnIndex="59" mapChnIndex="14" />
+		<chn chnIndex="60" mapChnIndex="9" />
+		<chn chnIndex="61" mapChnIndex="8" />
+		<chn chnIndex="62" mapChnIndex="3" />
+		<chn chnIndex="63" mapChnIndex="2" />
+		<chn chnIndex="64" mapChnIndex="19" />
+		<chn chnIndex="65" mapChnIndex="18" />
+		<chn chnIndex="66" mapChnIndex="13" />
+		<chn chnIndex="67" mapChnIndex="12" />
+		<chn chnIndex="68" mapChnIndex="7" />
+		<chn chnIndex="69" mapChnIndex="6" />
+		<chn chnIndex="70" mapChnIndex="1" />
+		<chn chnIndex="71" mapChnIndex="0" />
+	</chnMap>
+		 -->
+</maps>

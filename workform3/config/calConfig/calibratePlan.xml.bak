@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 校准点配置文件 -->
+<!-- needValidate 校准阶段是否验证电压电流上下限 true 是 false 否 -->
+<!-- needCalculateAfterCalibrate 是否开启校准后计量 -->
+<!-- maxProgramV 恒流模式程控电压设定值 -->
+<!-- maxProgramI 恒压模式程控电流设定值 -->
+<calibratePlan needValidate="true" needCalculateAfterCalibrate="true" maxProgramV="65000" maxProgramI="45000">
+	<!-- mode 模式 CC CV DC 注意大写，CV2模式自动从CV获取，不需要单独配置-->
+	<!-- level 精度档位 -->
+	<!-- pole 极性 NORMAL 正极性 REVERSE 反极性 注意大写 -->
+	<!-- pKMin 程控K下限值 -->
+	<!-- pKMax 程控K上限值 -->
+	<!-- pBMin 程控B下限值 -->
+	<!-- pKMax 程控B上限值 -->
+	<!-- adcKMin adcK下限值 -->
+	<!-- adcKMax adcK上限值 -->
+	<!-- adcBMin adcB下限值 -->
+	<!-- adcBMax adcB上限值 -->
+	<!-- checkAdcKMin 回检板adcK下限值 -->
+	<!-- checkAdcKMax 回检板adcK上限值 -->
+	<!-- checkAdcBMin 回检板adcB下限值 -->
+	<!-- checkAdcBMax 回检板adcB上限值 -->
+     	
+       <mode mode="CC" level="0" pole="NORMAL" pKMin="1.0" pKMax="5.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		<dot da="2000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="5000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="21000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="29000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="37000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="43000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>
+       	
+		<mode mode="CC" level="1" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		<dot da="500" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26500" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="39500" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	    <dot da="50000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>
+
+        
+	
+	<mode mode="CV" level="0" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999"      checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="10000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="40000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+	</mode>
+    
+	
+	<mode mode="DC" level="0" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="500" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="5000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="21000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="29000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="37000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="44000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>	
+	</mode>
+	
+		<mode mode="DC" level="1" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		<dot da="12000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="40000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>
+       
+
+       
+	<mode mode="CC" level="0" module="1" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+        	
+		<mode mode="DC" level="0" module="1" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>
+
+	<mode mode="CC" level="0" module="2" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="2" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="3" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="3" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="4" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="4" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="5" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="5" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="6" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="6" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="7" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="7" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="8" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="8" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="9" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="9" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="10" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="10" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+	<mode mode="CC" level="0" module="11" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="9999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+
+		<dot da="19800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="26300" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="30200" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34100" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="38000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41900" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="45800" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		
+		
+	</mode>
+	
+	<mode mode="DC" level="0" module="11" pole="NORMAL" pKMin="0.0" pKMax="9999.0" pBMin="-9999.0" pBMax="99999.0" adcKMin="-99999" adcKMax="99999" adcBMin="-99999" adcBMax="99999" checkAdcKMin="-99999" checkAdcKMax="99999" checkAdcBmin="-99999" checkAdcBmax="99999">
+		
+		
+		<dot da="13000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="20000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="27000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="34000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="41000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="48000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+		<dot da="52000" adcMin="0.0" adcMax="999999" meterMin="0.0" meterMax="999999"/>
+	</mode>	
+	
+
+</calibratePlan>
