@@ -59,21 +59,21 @@ public class MyHttpHandler implements HttpHandler {
 
 			// 返回报文
 			// String resmsg="恭喜你成功了!";
-			String resmsg = "{\"Status\":\"1\",\"Msg\":\"成功\"}";
-//			String resmsg = "{" + 
-//					"\"Status\": 1," + 
-//					"\"Msg\": \"成功\"," + 
-//					"\"Data\": {" + 
-//					"\"ProductCode\": \"GT.PLC.35A686-0201\"," + 
-//					"\"ProductMi\": \"CMI-0210\"," + 
-//					"\"Polarity\": \"1\"," + 
-//					"\"FrStep\": \"7\"," + 
-//					"\"HcEndVolMax\": 3.75," + 
-//					"\"HcEndVolMin\": 3.21," + 
-//					"\"FrCapMax\": 4850," + 
-//					"\"FrCapMin\": 3500" + 
-//					"}" + 
-//					"}";
+//			String resmsg = "{\"Status\":\"1\",\"Msg\":\"成功\"}";
+			String resmsg = "{" + 
+					"\"Status\": 1," + 
+					"\"Msg\": \"成功\"," + 
+					"\"Data\": {" + 
+					"\"ProductCode\": \"GT.PLC.35A686-0201\"," + 
+					"\"ProductMi\": \"CMI-0210\"," + 
+					"\"Polarity\": \"1\"," + 
+					"\"FrStep\": \"7\"," + 
+					"\"HcEndVolMax\": 3.75," + 
+					"\"HcEndVolMin\": 3.21," + 
+					"\"FrCapMax\": 4850," + 
+					"\"FrCapMin\": 3500" + 
+					"}" + 
+					"}";
 			httpExchange.sendResponseHeaders(HttpURLConnection.HTTP_OK, resmsg.getBytes("UTF-8").length);
 			OutputStream outputStream = httpExchange.getResponseBody();
 			outputStream.write(resmsg.getBytes("UTF-8"));

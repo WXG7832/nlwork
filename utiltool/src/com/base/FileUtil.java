@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.junit.Test;
@@ -19,40 +20,34 @@ import org.junit.Test;
 public class FileUtil {
 
 	/**
-     * copy("F:\\myjava","E:\\myjava");
-              * 文件夹携带文件 拷贝
-     * @param oldPath 原文件夹路径
-     * @param newPath 目标文件夹路径
-     * @throws IOException 
-     */
+	 * copy("F:\\myjava","E:\\myjava"); 文件夹携带文件 拷贝
+	 * 
+	 * @param oldPath
+	 *            原文件夹路径
+	 * @param newPath
+	 *            目标文件夹路径
+	 * @throws IOException
+	 */
 	public static void copy(String oldPath, String newPath) throws Exception {
-		
-		File file1=new File(oldPath);
-		File[] fs=file1.listFiles();
-		File file2=new File(newPath);
-		
-		if(!file2.exists()){
+
+		File file1 = new File(oldPath);
+		File[] fs = file1.listFiles();
+		File file2 = new File(newPath);
+
+		if (!file2.exists()) {
 			file2.mkdirs();
 		}
-		
+
 		for (File f : fs) {
-			if(f.isFile()){
-				copyFile(new File(f.getPath()),new File(newPath+File.separator+f.getName())); //调用文件拷贝的方法
-			}else if(f.isDirectory()){
-				copy(f.getPath(),newPath+File.separator+f.getName());
+			if (f.isFile()) {
+				copyFile(new File(f.getPath()), new File(newPath + File.separator + f.getName())); // 调用文件拷贝的方法
+			} else if (f.isDirectory()) {
+				copy(f.getPath(), newPath + File.separator + f.getName());
 			}
 		}
-		
+
 	}
-	
-	
-	/**
-	 * 按行读取文档
-	 * 
-	 * @author wavy_zheng 2020年3月25日
-	 * @param fileName
-	 * @return
-	 */
+
 	public static List<String> readFileByLines(String fileName) {
 		File file = new File(fileName);
 		BufferedReader reader = null;
@@ -84,9 +79,9 @@ public class FileUtil {
 		return list;
 
 	}
-	
-	public static String readToString(String fileName , String charset) {
-		
+
+	public static String readToString(String fileName, String charset) {
+
 		File file = new File(fileName);
 		Long filelength = file.length();
 		byte[] filecontent = new byte[filelength.intValue()];
@@ -107,7 +102,7 @@ public class FileUtil {
 			return null;
 		}
 	}
-	
+
 	public static void copyFile(File source, File dest) throws IOException {
 
 		if (!source.exists()) {
@@ -126,99 +121,88 @@ public class FileUtil {
 		fos.close();
 
 	}
-	
+
 	public static byte[] getBytes(File file) throws IOException {
-		
-        FileInputStream fis = new FileInputStream(file);  
-        ByteArrayOutputStream bos = new ByteArrayOutputStream(1024 * 1024);  
-        byte[] b = new byte[1024 * 1024];  
-        int n;  
-        while ((n = fis.read(b)) != -1) {  
-            bos.write(b, 0, n);  
-        }  
-        fis.close();  
-        bos.close();  
-        return bos.toByteArray(); 
+
+		FileInputStream fis = new FileInputStream(file);
+		ByteArrayOutputStream bos = new ByteArrayOutputStream(1024 * 1024);
+		byte[] b = new byte[1024 * 1024];
+		int n;
+		while ((n = fis.read(b)) != -1) {
+			bos.write(b, 0, n);
+		}
+		fis.close();
+		bos.close();
+		return bos.toByteArray();
 	}
 
 	public static boolean moveFile(File source, File dest) throws IOException {
 
-		copyFile(source,dest);
+		copyFile(source, dest);
 		return source.delete();
 	}
-	
-	public static void removeAllFielsExcept(String directoryPath , String fileName) {
-		
-		
-		 File directory = new File(directoryPath);
-		  if(!directory.exists()) {
-			  
-			  return;
-		  }
-		  for(File file : directory.listFiles()) {
-			  
-			    if(file.isDirectory()) {
-			    	
-			    	removeAllFielsExcept(file.getPath(),fileName); //递归
-			    }else {
-			    	
-			    	if(fileName == null || !fileName.equals(file.getName())) {
-			    	  
-			    	   file.delete();
-			    	}else {
-			    		
-			    		 System.out.println("except delete " + fileName);
-			    	}
-			    }
-		  }
-	}
-	
-	public static void removeAllFiles(String directoryPath) {
-		
-		
-		  removeAllFielsExcept(directoryPath , null);
-//		  File directory = new File(directoryPath);
-//		  if(!directory.exists()) {
-//			  
-//			  return;
-//		  }
-//		  for(File file : directory.listFiles()) {
-//			  
-//			    if(file.isDirectory()) {
-//			    	
-//			    	removeAllFiles(file.getPath()); //递归
-//			    }else {
-//			    	
-//			    	file.delete();
-//			    }
-//		  }
-	}
-	
-	
-	/**
-	 * 按行写入文件
-	 * @author  wavy_zheng
-	 * 2021年4月12日
-	 * @param fileName
-	 * @param content
-	 * @throws IOException 
-	 */
-	public static void writeFileByLines(String fileName , List<String> content) throws IOException {
-		
-		FileWriter fw = new FileWriter(fileName);
-        for (int i = 0; i < content.size(); i++) {
-        	
-        	if(!content.get(i).substring(content.get(i).length() - 1).equals("\n")) {
-        		
-        		fw.write(content.get(i) + "\n");
-        	}
-            
-        }
-        fw.close();
-		
+
+	public static void removeAllFielsExcept(String directoryPath, String fileName) {
+
+		File directory = new File(directoryPath);
+		if (!directory.exists()) {
+
+			return;
+		}
+		for (File file : directory.listFiles()) {
+
+			if (file.isDirectory()) {
+
+				removeAllFielsExcept(file.getPath(), fileName); // 递归
+			} else {
+
+				if (fileName == null || !fileName.equals(file.getName())) {
+
+					file.delete();
+				} else {
+
+					System.out.println("except delete " + fileName);
+				}
+			}
+		}
 	}
 
-	public  static void writeStringToFile(String fileName, String content , String charset) {
+	public static void removeAllFiles(String directoryPath) {
+
+		removeAllFielsExcept(directoryPath, null);
+		// File directory = new File(directoryPath);
+		// if(!directory.exists()) {
+		//
+		// return;
+		// }
+		// for(File file : directory.listFiles()) {
+		//
+		// if(file.isDirectory()) {
+		//
+		// removeAllFiles(file.getPath()); //递归
+		// }else {
+		//
+		// file.delete();
+		// }
+		// }
+	}
+
+	public static void writeFileByLines(String fileName, List<String> content) throws IOException {
+
+		FileWriter fw = new FileWriter(fileName);
+		for (int i = 0; i < content.size(); i++) {
+
+			if (!content.get(i).substring(content.get(i).length() - 1).equals("\n")) {
+
+				fw.write(content.get(i) + "\n");
+			}
+
+		}
+		fw.close();
+
+	}
+
+	public static void writeStringToFile(String fileName, String content, String charset) {
 
 		File file = new File(fileName);
 		try {
@@ -232,41 +216,78 @@ public class FileUtil {
 		}
 
 	}
-	
+
 	/**
-     * 通过文件路径直接修改文件名
-     * 
-     * @param filePath    需要修改的文件的完整路径
-     * @param newFileName 需要修改的文件的名称
-     * @return
-     */
-    public static String FixFileName(String filePath, String newFileName) {
-        File f = new File(filePath);
-        if (!f.exists()) { // 判断原文件是否存在（防止文件名冲突）
-            return null;
-        }
-        newFileName = newFileName.trim();
-        if ("".equals(newFileName) || newFileName == null) // 文件名不能为空
-            return null;
-        String newFilePath = filePath.substring(0, filePath.lastIndexOf("\\")) + "\\" + newFileName;
-        File nf = new File(newFilePath);
-        try {
-            f.renameTo(nf); // 修改文件名
-        } catch (Exception err) {
-            err.printStackTrace();
-            return null;
-        }
-        return newFilePath;
-    }
-    
-    
-    public static boolean createFile(String path) {
+	 * 通过文件路径直接修改文件名
+	 * 
+	 * @param filePath
+	 *            需要修改的文件的完整路径
+	 * @param newFileName
+	 *            需要修改的文件的名称
+	 * @return
+	 */
+	public static String FixFileName(String filePath, String newFileName) {
+		File f = new File(filePath);
+		if (!f.exists()) { // 判断原文件是否存在（防止文件名冲突）
+			return null;
+		}
+		newFileName = newFileName.trim();
+		if ("".equals(newFileName) || newFileName == null) // 文件名不能为空
+			return null;
+		String newFilePath = filePath.substring(0, filePath.lastIndexOf("\\")) + "\\" + newFileName;
+		File nf = new File(newFilePath);
+		try {
+			f.renameTo(nf); // 修改文件名
+		} catch (Exception err) {
+			err.printStackTrace();
+			return null;
+		}
+		return newFilePath;
+	}
+
+	/**
+	 * 删除文件夹下指定时间段文件
+	 * 
+	 * @return
+	 */
+	public static boolean deleteFileByTime(long start, long end, File dir) {
+		try {
+			File[] files = dir.listFiles();
+			for (int i = 0; i < files.length; i++) {
+				String filePath = files[i].getCanonicalPath();
+				long lastTime = files[i].lastModified();
+				if (lastTime >= start && lastTime < end) {
+					File file = new File(filePath);
+					file.delete();
+				}
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+		return true;
+
+	}
+
+	public static boolean createFile(String path) {
 		File file = new File(path);
 		return (file.mkdirs());
 	}
-    @Test
-    public void test() {
-    	String path = "./config"+File.separator+2;
-    	System.out.println(createFile(path));
-    }
+
+	@Test
+	public void test() {
+		String path = "./config" + File.separator + 2;
+		System.out.println("==="+createFile(path));
+	}
+	@Test
+	public void test1() {
+		String path = "D://KATOP//FCT";
+		File file = new File(path);
+		long end = new Date().getTime() - (1 * 24 * 3600 * 1000);
+		long start = end - (10 * 24 * 3600 * 1000);
+		boolean ok = deleteFileByTime(start, end, file);
+		System.out.println("删除文件："+ok);
+	}
+	
+	
 }

@@ -11,5 +11,12 @@ public class T1 {
 	boolean b = CommonUtil.checkDigit(str, false);
 	System.out.println(b);
 	
+	// 
+	long last = System.currentTimeMillis();
+	
+	CommonUtil.sleep(6 * 1000);
+	
+	System.out.println("Ê±¼ä²î"+(System.currentTimeMillis() - last));
+	
 	}
 }
